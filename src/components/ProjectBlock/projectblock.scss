@@ -1,0 +1,63 @@
+@import "../../styles/partials/_FontStyles";
+@import "../../styles/partials/_Mixins";
+@import "../../styles/partials/_Variables";
+
+.project {
+  padding: 1rem 1.5rem;
+
+  @include breakpoint-min-size($desktop) {
+    padding: 0 8.5rem;
+    margin-bottom: 4rem;
+  }
+
+  &__img-container {
+    height: 8rem;
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint-min-size($desktop) {
+      height: 16rem;
+      width: 90%;
+    }
+  }
+
+  &__info {
+    @include breakpoint-min-size($desktop) {
+      display: flex;
+      justify-content: space-between;
+      max-width: 90%;
+      align-items: flex-start;
+    }
+  }
+
+  &__logo {
+    @include breakpoint-min-size($desktop) {
+      width: 10rem;
+    }
+  }
+
+  &__title {
+    font-family: "Fraunces 9pt";
+    font-size: 1.1rem;
+
+    @include breakpoint-min-size($desktop) {
+      font-size: 1.3rem;
+      max-width: 50%;
+    }
+  }
+
+  &__desc {
+    font-family: "Uncut Sans";
+    font-weight: 600;
+    font-size: 1rem;
+    padding-top: 0.4rem;
+
+    @include breakpoint-min-size($desktop) {
+      padding-top: 0.4rem;
+      font-size: 1.1;
+    }
+  }
+}

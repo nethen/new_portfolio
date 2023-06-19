@@ -1,8 +1,14 @@
 @import "../../styles/partials/_FontStyles";
 @import "../../styles/partials/_Mixins";
+@import "../../styles/partials/_Variables";
 
 .nav__links > a {
   text-decoration: none;
+  color: #4069cc;
+
+  &:hover {
+    color: #b88700;
+  }
 }
 
 .nav {
@@ -12,19 +18,24 @@
   justify-content: space-between;
   padding: 1.5rem 1rem;
 
+  @include breakpoint-min-size($desktop) {
+    padding: 3rem 8rem;
+  }
+
   &__links {
     display: none;
 
-    @include breakpoint-min-size(768px) {
+    @include breakpoint-min-size($tablet) {
       display: flex;
       gap: 1rem;
       font-family: "Uncut Sans";
+      font-weight: 600;
     }
   }
 
   &__mobile-menu {
     display: flex;
-    @include breakpoint-min-size(768px) {
+    @include breakpoint-min-size($tablet) {
       display: none;
     }
   }

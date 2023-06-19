@@ -1,0 +1,36 @@
+@import "../../styles/partials/_FontStyles";
+@import "../../styles/partials/_Mixins";
+@import "../../styles/partials/_Variables";
+
+.footer {
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+
+  @include breakpoint-min-size($desktop) {
+    padding: 1rem 8.8rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    font-family: "Fraunces 9pt";
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding-bottom: 0.6rem;
+    margin-block-end: 0;
+  }
+
+  &__link {
+    font-family: "Uncut Sans";
+    font-weight: 500;
+    color: #4069cc;
+  }
+
+  &__right {
+    display: flex;
+    gap: 0.5rem;
+    @include breakpoint-min-size($desktop) {
+      align-items: center;
+    }
+  }
+}
