@@ -1,0 +1,39 @@
+@import "../../styles/partials/_FontStyles";
+@import "../../styles/partials/_Mixins";
+
+.nav__links > a {
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+
+  &__links {
+    display: none;
+
+    @include breakpoint-min-size(768px) {
+      display: flex;
+      gap: 1rem;
+      font-family: "Uncut Sans";
+    }
+  }
+
+  &__mobile-menu {
+    display: flex;
+    @include breakpoint-min-size(768px) {
+      display: none;
+    }
+  }
+
+  &__logo-img {
+    width: 70%;
+  }
+}
+
+.mobile-menu {
+  width: 2rem;
+}

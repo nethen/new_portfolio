@@ -1,0 +1,18 @@
+// MEDIA QUERIES
+@mixin breakpoint-min-size($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin breakpoint-range($breakpoint1, $breakpoint2) {
+  @media (min-width: $breakpoint1) and (max-width: $breakpoint2) {
+    @content;
+  }
+}
+
+@mixin breakpoint-max-size($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
