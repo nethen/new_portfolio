@@ -1,0 +1,23 @@
+@import "../../styles/partials/_FontStyles";
+@import "../../styles/partials/_Mixins";
+@import "../../styles/partials/_Variables";
+
+.summary-box {
+  border: solid 4px #4069cc;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin: 1.5rem;
+
+  &__title {
+    font-family: "Fraunces 9pt";
+    font-weight: 700;
+    background-color: white;
+    font-size: 1.8rem;
+    position: relative;
+    top: -48px;
+    padding: 0 1rem;
+    max-width: fit-content;
+    margin-block-end: 0;
+    margin-block-start: 0;
+  }
+}

@@ -1,0 +1,9 @@
+.hackathon-item {
+  display: flex;
+  justify-content: space-between;
+
+  &__main {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
