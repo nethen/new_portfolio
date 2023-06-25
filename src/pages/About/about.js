@@ -4,6 +4,8 @@ import mePhoto from "../../assets/me.png";
 import SummaryBox from "../../components/SummaryBox/summarybox";
 import Hackathons from "../../components/Hackathons/hackathons";
 import Activity from "../../components/Activity/activity";
+import CTA from "../../components/CTA/cta";
+import Footer from "../../components/Footer/Footer";
 function about() {
   return (
     <>
@@ -56,7 +58,23 @@ function about() {
           title="Improving my hand-eye coordination."
           desc="You can catch me trying my best at League of Legends, surviving the night in Don’t Starve Together, or putting the finishing touches on my Animal Crossing island."
         ></Activity>
+        <Activity
+          title="Sticking my nose in a book."
+          desc="For screen breaks, I’m typically reading something from my book collection for fun, or flipping through a design book for reference."
+        ></Activity>
+
+        <Activity
+          title="Staying connected through online communities."
+          desc="Whether it be learning from people at Vancouver Design Check-in, or moderating the community personal development community for Lavendaire, I’m always trying to frequent spaces that inspire me."
+        ></Activity>
+        <Activity
+          title="Walking slower then the average person."
+          desc="When outside, I’m often walking my senior dog Benji around a soccer field, or not walking fast enough to keep up with friends."
+        ></Activity>
       </section>
+
+      <CTA></CTA>
+      <Footer></Footer>
     </>
   );
 }

@@ -63,7 +63,26 @@
   }
 }
 
-.professional-stuff,
+.professional-stuff {
+  padding: 0 1.5rem;
+}
+
 .after-hours {
   padding: 0 1.5rem;
+
+  &__header {
+    font-family: "Fraunces 9pt";
+    font-weight: 700;
+    font-size: 2rem;
+    margin-block-end: 0;
+  }
+
+  &__subheader {
+    font-family: "Fraunces 9pt";
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: #1e1800;
+  }
 }
