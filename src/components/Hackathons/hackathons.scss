@@ -1,0 +1,9 @@
+@import "../../styles/partials/_FontStyles";
+@import "../../styles/partials/_Mixins";
+@import "../../styles/partials/_Variables";
+
+.hackathons {
+  @include breakpoint-min-size($desktop) {
+    @include flex-column;
+  }
+}

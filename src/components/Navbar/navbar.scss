@@ -4,7 +4,6 @@
 
 .nav__links > a {
   text-decoration: none;
-  color: #4069cc;
 
   &:hover {
     color: #b88700;
@@ -12,8 +11,7 @@
 }
 
 .nav {
-  display: flex;
-  flex-direction: row;
+  @include flex-row;
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 1rem;
@@ -26,15 +24,14 @@
     display: none;
 
     @include breakpoint-min-size($tablet) {
-      display: flex;
       gap: 1rem;
-      font-family: "Uncut Sans";
-      font-weight: 600;
+      @include m-text-link;
+      @include flex-row;
     }
   }
 
   &__mobile-menu {
-    display: flex;
+    @include flex-row;
     @include breakpoint-min-size($tablet) {
       display: none;
     }

@@ -8,26 +8,22 @@
 
   @include breakpoint-min-size($desktop) {
     padding: 1rem 8.8rem;
-    display: flex;
+    @include flex-row;
     justify-content: space-between;
   }
 
   &__copyright {
-    font-family: "Fraunces 9pt";
-    font-weight: 600;
-    font-size: 1.1rem;
+    @include m-bold-heading;
     padding-bottom: 0.6rem;
     margin-block-end: 0;
   }
 
   &__link {
-    font-family: "Uncut Sans";
-    font-weight: 500;
-    color: #4069cc;
+    @include m-text-link;
   }
 
   &__right {
-    display: flex;
+    @include flex-row;
     gap: 0.5rem;
     @include breakpoint-min-size($desktop) {
       align-items: center;

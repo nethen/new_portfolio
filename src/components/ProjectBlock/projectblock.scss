@@ -15,7 +15,7 @@
     height: 8rem;
     width: 100%;
     border-radius: 8px;
-    display: flex;
+    @include flex-row;
     align-items: center;
     justify-content: center;
 
@@ -27,7 +27,7 @@
 
   &__info {
     @include breakpoint-min-size($desktop) {
-      display: flex;
+      @include flex-row;
       justify-content: space-between;
       max-width: 90%;
       align-items: flex-start;
@@ -41,8 +41,7 @@
   }
 
   &__title {
-    font-family: "Fraunces 9pt";
-    font-size: 1.1rem;
+    @include m-bold-heading;
 
     @include breakpoint-min-size($desktop) {
       font-size: 1.3rem;
@@ -51,9 +50,7 @@
   }
 
   &__desc {
-    font-family: "Uncut Sans";
-    font-weight: 600;
-    font-size: 1rem;
+    @include m-body;
     padding-top: 0.4rem;
 
     @include breakpoint-min-size($desktop) {

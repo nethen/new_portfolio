@@ -1,9 +1,13 @@
+@import "../../styles/partials/_FontStyles";
+@import "../../styles/partials/_Mixins";
+@import "../../styles/partials/_Variables";
+
 .hackathon-item {
-  display: flex;
+  @include flex-row;
   justify-content: space-between;
 
   &__main {
-    display: flex;
+    @include flex-row;
     gap: 0.5rem;
   }
 }

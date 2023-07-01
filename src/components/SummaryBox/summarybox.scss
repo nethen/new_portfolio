@@ -8,16 +8,27 @@
   padding: 1.5rem;
   margin: 1.5rem;
 
+  @include breakpoint-min-size($desktop) {
+    margin: 0 14rem;
+    width: 66%;
+  }
+
+  &__items {
+    @include flex-column;
+    @include breakpoint-min-size($desktop) {
+      @include flex-row;
+      justify-content: space-between;
+      padding: 0.25rem;
+    }
+  }
+
   &__title {
-    font-family: "Fraunces 9pt";
-    font-weight: 700;
+    @include m-bold-heading-large;
+    @include removeMargin;
     background-color: white;
-    font-size: 1.8rem;
     position: relative;
     top: -48px;
     padding: 0 1rem;
     max-width: fit-content;
-    margin-block-end: 0;
-    margin-block-start: 0;
   }
 }

@@ -4,49 +4,63 @@
 
 .about {
   &__top {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     padding: 1.5rem;
+
+    @include breakpoint-min-size($desktop) {
+      @include flex-row;
+      padding: 0 7.3rem;
+      gap: 1rem;
+      margin-bottom: 4rem;
+      width: 80%;
+      justify-content: space-evenly;
+    }
 
     &-content {
       order: 1;
+
+      @include breakpoint-min-size($desktop) {
+        order: 2;
+        width: 40%;
+      }
     }
   }
 
   &__photo {
     order: 2;
     width: 100%;
+
+    @include breakpoint-min-size($desktop) {
+      width: 30%;
+      order: 1;
+    }
   }
 
   &__header {
-    font-family: "Fraunces 9pt";
-    font-weight: 700;
-    font-size: 2rem;
+    @include m-bold-heading-large;
     margin-block-end: 0;
     padding-bottom: 0.5rem;
   }
 
   &__desc {
-    font-family: "Fraunces 9pt";
-    font-weight: 600;
-    font-size: 1.3rem;
+    @include m-body-serif;
     margin-block-start: 0;
   }
 
   &__h2 {
-    font-family: "Fraunces 9pt";
-    font-weight: 700;
-    font-size: 1.5rem;
+    @include m-bold-heading-large;
     padding-left: 1.5rem;
     margin-block-end: 0.5rem;
+
+    @include breakpoint-min-size($desktop) {
+      padding-left: 0;
+    }
   }
 }
 
 .work {
   &__header {
-    font-family: "Fraunces 9pt";
-    font-weight: 700;
-    font-size: 1.2rem;
+    @include m-bold-heading;
     margin-block-end: 0;
   }
 
@@ -57,32 +71,58 @@
     &-item {
       list-style: none;
       padding-bottom: 0.5rem;
-      font-family: "Uncut Sans";
-      font-weight: 500;
+      @include m-body;
     }
   }
 }
 
 .professional-stuff {
   padding: 0 1.5rem;
+  @include flex-column;
+
+  @include breakpoint-min-size($desktop) {
+    @include flex-row;
+    padding: 0 7.3rem;
+    justify-content: space-evenly;
+  }
+}
+
+.resume-things {
+  @include flex-column;
 }
 
 .after-hours {
   padding: 0 1.5rem;
 
+  @include breakpoint-min-size($desktop) {
+    padding: 0 7.3rem;
+  }
+
+  &__titles {
+    @include breakpoint-min-size($desktop) {
+      @include flex-row;
+      align-items: flex-end;
+      width: 66%;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__grid {
+    @include breakpoint-min-size($desktop) {
+      @include flex-row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 2rem;
+    }
+  }
+
   &__header {
-    font-family: "Fraunces 9pt";
-    font-weight: 700;
-    font-size: 2rem;
+    @include m-bold-heading-large;
     margin-block-end: 0;
   }
 
   &__subheader {
-    font-family: "Fraunces 9pt";
-    font-weight: 600;
-    font-size: 1.4rem;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    color: #1e1800;
+    @include m-body-serif;
+    @include removeMargin;
   }
 }
