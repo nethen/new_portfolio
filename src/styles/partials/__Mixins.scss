@@ -30,7 +30,7 @@
   }
 }
 
-// FONT STYLES
+// FONT STYLES - MOBILE
 
 @mixin m-h1-style {
   font-family: "Fraunces 9pt", sans-serif;
@@ -77,4 +77,20 @@
 @mixin removeMargin {
   margin-block-end: 0;
   margin-block-start: 0;
+}
+
+// FONT STYLES - DESKTOP
+
+@mixin d-heading-xl {
+  font-family: "Fraunces 9pt", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: $black;
+}
+
+@mixin d-subheading-serif {
+  font-family: "Fraunces 9pt";
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: $black;
 }

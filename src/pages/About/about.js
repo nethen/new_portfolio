@@ -12,13 +12,15 @@ function about() {
       <Navbar></Navbar>
 
       <section className="about__top">
-        <img src={mePhoto} className="about__photo" />
-        <div className="about__top-content">
-          <h1 className="about__header">Hi again, I’m Michelle! </h1>
-          <p className="about__desc">
-            Beyond Product Design, I’m a maker that enjoys taking things from 0
-            to 1.
-          </p>
+        <div className="about__top-container">
+          <img src={mePhoto} className="about__photo" />
+          <div className="about__top-content">
+            <h1 className="about__header">Hi again, I’m Michelle! </h1>
+            <p className="about__desc">
+              Beyond Product Design, I’m a maker that enjoys taking things from
+              0 to 1.
+            </p>
+          </div>
         </div>
       </section>
 

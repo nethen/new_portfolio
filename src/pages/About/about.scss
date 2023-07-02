@@ -4,16 +4,22 @@
 
 .about {
   &__top {
-    @include flex-column;
-    padding: 1.5rem;
+    @include flex-row;
+    justify-content: center;
 
     @include breakpoint-min-size($desktop) {
-      @include flex-row;
-      padding: 0 7.3rem;
-      gap: 1rem;
-      margin-bottom: 4rem;
-      width: 80%;
-      justify-content: space-evenly;
+      margin-bottom: 2rem;
+    }
+
+    &-container {
+      @include flex-column;
+      padding: 1.5rem;
+
+      @include breakpoint-min-size($desktop) {
+        @include flex-row;
+        gap: 3rem;
+        width: 72%;
+      }
     }
 
     &-content {
@@ -21,7 +27,6 @@
 
       @include breakpoint-min-size($desktop) {
         order: 2;
-        width: 40%;
       }
     }
   }
@@ -40,11 +45,20 @@
     @include m-bold-heading-large;
     margin-block-end: 0;
     padding-bottom: 0.5rem;
+
+    @include breakpoint-min-size($desktop) {
+      @include d-heading-xl;
+    }
   }
 
   &__desc {
     @include m-body-serif;
     margin-block-start: 0;
+
+    @include breakpoint-min-size($desktop) {
+      @include d-subheading-serif;
+      width: 80%;
+    }
   }
 
   &__h2 {

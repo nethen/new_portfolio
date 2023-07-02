@@ -3,21 +3,28 @@
 @import "../../styles/partials/_Variables";
 
 .summary-box {
-  border: solid 4px #4069cc;
-  border-radius: 16px;
-  padding: 1.5rem;
-  margin: 1.5rem;
+  @include flex-row;
+  justify-content: center;
 
   @include breakpoint-min-size($desktop) {
-    margin: 0 14rem;
-    width: 66%;
+    margin-bottom: 2rem;
+  }
+
+  &__container {
+    border: solid 4px #4069cc;
+    border-radius: 16px;
+
+    @include breakpoint-min-size($desktop) {
+      width: 72%;
+      padding: 2rem 0;
+    }
   }
 
   &__items {
     @include flex-column;
     @include breakpoint-min-size($desktop) {
       @include flex-row;
-      justify-content: space-between;
+      justify-content: space-evenly;
       padding: 0.25rem;
     }
   }
@@ -28,6 +35,7 @@
     background-color: white;
     position: relative;
     top: -48px;
+    left: 60px;
     padding: 0 1rem;
     max-width: fit-content;
   }

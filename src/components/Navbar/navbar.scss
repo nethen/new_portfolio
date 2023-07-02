@@ -12,12 +12,17 @@
 
 .nav {
   @include flex-row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 1rem;
+  justify-content: center;
 
-  @include breakpoint-min-size($desktop) {
-    padding: 3rem 8rem;
+  &__container {
+    @include flex-row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+
+    @include breakpoint-min-size($desktop) {
+      width: 72%;
+    }
   }
 
   &__links {
