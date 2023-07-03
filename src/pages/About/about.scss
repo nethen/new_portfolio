@@ -86,18 +86,26 @@
       list-style: none;
       padding-bottom: 0.5rem;
       @include m-body;
+
+      @include breakpoint-min-size($desktop) {
+        @include d-body;
+      }
     }
   }
 }
 
 .professional-stuff {
-  padding: 0 1.5rem;
-  @include flex-column;
+  @include flex-row;
+  justify-content: center;
+  &__box {
+    padding: 0 1.5rem;
+    @include flex-column;
 
-  @include breakpoint-min-size($desktop) {
-    @include flex-row;
-    padding: 0 7.3rem;
-    justify-content: space-evenly;
+    @include breakpoint-min-size($desktop) {
+      @include flex-row;
+      justify-content: space-between;
+      width: 72%;
+    }
   }
 }
 
@@ -106,10 +114,15 @@
 }
 
 .after-hours {
-  padding: 0 1.5rem;
-
   @include breakpoint-min-size($desktop) {
-    padding: 0 7.3rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__container {
+    @include breakpoint-min-size($desktop) {
+      width: 72%;
+    }
   }
 
   &__titles {
@@ -117,7 +130,8 @@
       @include flex-row;
       align-items: flex-end;
       width: 66%;
-      justify-content: space-evenly;
+      justify-content: flex-start;
+      gap: 3rem;
     }
   }
 
@@ -125,7 +139,7 @@
     @include breakpoint-min-size($desktop) {
       @include flex-row;
       flex-wrap: wrap;
-      justify-content: space-evenly;
+      justify-content: space-between;
       gap: 2rem;
     }
   }

@@ -4,7 +4,7 @@
 
 .activity {
   @include breakpoint-min-size($desktop) {
-    width: 33%;
+    width: 45%;
   }
 
   &__title {

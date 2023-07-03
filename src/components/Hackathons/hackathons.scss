@@ -2,8 +2,13 @@
 @import "../../styles/partials/_Mixins";
 @import "../../styles/partials/_Variables";
 
-.hackathons {
+.hackathon {
   @include breakpoint-min-size($desktop) {
     @include flex-column;
+  }
+
+  &__header {
+    @include removeMargin;
+    @include d-subheading-serif;
   }
 }

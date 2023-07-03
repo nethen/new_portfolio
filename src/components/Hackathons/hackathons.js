@@ -5,7 +5,7 @@ import HackathonItem from "../HackathonItems/hackathonitems";
 function Hackathons() {
   return (
     <>
-      <div className="hackathons">
+      <div className="hackathon">
         <h2 className="hackathon__header">Hackathon History</h2>
         <p className="hackathon__subheader">
           View my projects for many of these events on Devpost ↗

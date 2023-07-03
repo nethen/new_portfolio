@@ -94,3 +94,10 @@
   font-size: 1.8rem;
   color: $black;
 }
+
+@mixin d-body {
+  font-family: "Uncut Sans";
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: $black;
+}
