@@ -6,11 +6,10 @@
   @include breakpoint-min-size($desktop) {
     @include flex-row;
     justify-content: center;
+    padding: 4rem 0;
   }
 
   &__container {
-    margin-bottom: 2rem;
-
     @include breakpoint-min-size($desktop) {
       @include flex-row;
       width: 72%;

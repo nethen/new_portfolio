@@ -4,6 +4,7 @@
 
 .cta {
   @include breakpoint-min-size($desktop) {
+    padding-top: 4rem;
     @include flex-row;
     align-items: center;
     justify-content: center;
