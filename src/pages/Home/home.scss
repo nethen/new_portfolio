@@ -1,0 +1,18 @@
+@import "../../styles/partials/_FontStyles";
+@import "../../styles/partials/_Mixins";
+@import "../../styles/partials/_Variables";
+
+.projects-box {
+  padding: 1.5rem 1rem;
+  @include breakpoint-min-size($desktop) {
+    @include flex-row;
+    justify-content: center;
+  }
+
+  &__container {
+    width: 100%;
+    @include breakpoint-min-size($desktop) {
+      width: 72%;
+    }
+  }
+}

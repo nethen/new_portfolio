@@ -19,6 +19,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 1rem;
+    width: 100%;
 
     @include breakpoint-min-size($desktop) {
       width: 72%;

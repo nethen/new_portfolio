@@ -3,12 +3,9 @@
 @import "../../styles/partials/_Variables";
 
 .project {
-  padding: 1rem 1.5rem;
-
   @include breakpoint-min-size($desktop) {
-    padding: 0 8.5rem;
-    margin-bottom: 4rem;
-    max-width: 70%;
+    margin-bottom: 3rem;
+    max-width: 90%;
   }
 
   &__img-container {
@@ -26,6 +23,9 @@
   }
 
   &__info {
+    padding-top: 0.6rem;
+    padding-bottom: 2rem;
+
     @include breakpoint-min-size($desktop) {
       @include flex-row;
       justify-content: space-between;
@@ -42,7 +42,7 @@
 
   &__title {
     @include m-bold-heading;
-
+    @include removeMargin;
     @include breakpoint-min-size($desktop) {
       font-size: 1.3rem;
       max-width: 50%;
@@ -52,6 +52,7 @@
   &__desc {
     @include m-body;
     padding-top: 0.4rem;
+    @include removeMargin;
 
     @include breakpoint-min-size($desktop) {
       padding-top: 0.4rem;

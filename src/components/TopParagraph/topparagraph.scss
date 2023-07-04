@@ -4,8 +4,14 @@
 
 .top-paragraph {
   @include breakpoint-min-size($desktop) {
-    padding: 0 7.3rem;
-    margin-bottom: 1rem;
+    @include flex-row;
+    justify-content: center;
+    padding: 2em 0rem;
+  }
+  &__container {
+    @include breakpoint-min-size($desktop) {
+      width: 72%;
+    }
   }
 }
 
@@ -14,13 +20,12 @@
     @include flex-row;
     align-items: flex-start;
     gap: 0.5rem;
-    padding: 0 1rem;
   }
 
   &__title {
     @include m-h1-style;
     @include removeMargin;
-    padding-bottom: 0.5rem;
+    padding-left: 1rem;
 
     @include breakpoint-min-size($desktop) {
       font-size: 2rem;
@@ -28,14 +33,14 @@
   }
 
   &__desc {
-    @include m-body;
     @include removeMargin;
-    padding: 0 1rem;
-    padding-bottom: 1.2rem;
+    @include m-bold-heading;
+    padding: 1rem;
 
     @include breakpoint-min-size($desktop) {
       font-size: 1.5rem;
-      max-width: 70%;
+      max-width: 65%;
+      @include d-subheading-serif;
     }
   }
 }
@@ -52,8 +57,7 @@
 
 .list {
   &__container {
-    padding: 0 1rem;
-    padding-bottom: 2rem;
+    padding: 0rem 1rem;
 
     @include breakpoint-min-size($desktop) {
       @include flex-row;

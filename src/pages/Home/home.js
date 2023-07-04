@@ -12,18 +12,22 @@ function Home() {
     <>
       <Navbar></Navbar>
       <TopParagrah></TopParagrah>
-      <ProjectBlock
-        img={guustologo}
-        title="Reimagining what employee recognition looks like"
-        desc="Design @ Guusto"
-        bgcolor="#22315c"
-      ></ProjectBlock>
-      <ProjectBlock
-        img={boxpalslogo}
-        title="Helping individuals save money through group order management"
-        desc="Development @ Brainstaiton"
-        bgcolor="#004921"
-      ></ProjectBlock>
+      <section className="projects-box">
+        <div className="projects-box__container">
+          <ProjectBlock
+            img={guustologo}
+            title="Reimagining what employee recognition looks like"
+            desc="Design @ Guusto"
+            bgcolor="#22315c"
+          ></ProjectBlock>
+          <ProjectBlock
+            img={boxpalslogo}
+            title="Helping individuals save money through group order management"
+            desc="Development @ Brainstaiton"
+            bgcolor="#004921"
+          ></ProjectBlock>
+        </div>
+      </section>
       <Footer></Footer>
     </>
   );
