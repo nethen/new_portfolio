@@ -5,14 +5,18 @@
 .summary-box {
   @include flex-row;
   justify-content: center;
+  padding: 0 1rem;
+  margin: 1rem 0;
 
   @include breakpoint-min-size($desktop) {
     margin-bottom: 2rem;
+    padding: 0;
   }
 
   &__container {
     border: solid 4px #4069cc;
     border-radius: 16px;
+    padding: 0rem 2rem;
 
     @include breakpoint-min-size($desktop) {
       width: 72%;
@@ -34,9 +38,15 @@
     @include removeMargin;
     background-color: white;
     position: relative;
-    top: -48px;
-    left: 60px;
     padding: 0 1rem;
+    top: -20px;
+    left: -12px;
+
     max-width: fit-content;
+
+    @include breakpoint-min-size($desktop) {
+      top: -48px;
+      left: 60px;
+    }
   }
 }

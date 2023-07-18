@@ -1,9 +1,9 @@
 import "./home.scss";
+import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/navbar";
 import TopParagrah from "../../components/TopParagraph/TopParagraph";
 import ProjectBlock from "../../components/ProjectBlock/projectblock";
 import Footer from "../../components/Footer/Footer";
-
 import guustologo from "../../assets/guusto.svg";
 import boxpalslogo from "../../assets/boxpals.svg";
 
@@ -20,12 +20,14 @@ function Home() {
             desc="Design @ Guusto"
             bgcolor="#22315c"
           ></ProjectBlock>
-          <ProjectBlock
-            img={boxpalslogo}
-            title="Helping individuals save money through group order management"
-            desc="Development @ Brainstaiton"
-            bgcolor="#004921"
-          ></ProjectBlock>
+          <Link className="projects-box__link" to="/boxpals">
+            <ProjectBlock
+              img={boxpalslogo}
+              title="Helping individuals save money through group order management"
+              desc="Development @ Brainstaiton"
+              bgcolor="#004921"
+            ></ProjectBlock>
+          </Link>
         </div>
       </section>
       <Footer></Footer>

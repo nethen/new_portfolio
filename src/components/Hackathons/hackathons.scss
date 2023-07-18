@@ -9,6 +9,6 @@
 
   &__header {
     @include removeMargin;
-    @include d-subheading-serif;
+    @include m-bold-heading;
   }
 }

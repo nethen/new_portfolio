@@ -39,7 +39,7 @@
 
     @include breakpoint-min-size($desktop) {
       font-size: 1.5rem;
-      max-width: 65%;
+      max-width: 75%;
       @include d-subheading-serif;
     }
   }

@@ -3,8 +3,9 @@
 @import "../../styles/partials/_Variables";
 
 .cta {
+  padding: 0 1rem;
   @include breakpoint-min-size($desktop) {
-    padding-top: 4rem;
+    padding: 4rem 0rem;
     @include flex-row;
     align-items: center;
     justify-content: center;
@@ -29,6 +30,7 @@
   &__links {
     display: flex;
     justify-content: space-between;
+    width: 80%;
 
     @include breakpoint-min-size($desktop) {
       width: 30%;

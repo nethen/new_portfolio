@@ -1,0 +1,91 @@
+@import "../../styles/partials/_FontStyles";
+@import "../../styles/partials/_Mixins";
+@import "../../styles/partials/_Variables";
+
+iframe {
+  width: 70%;
+  height: 12rem;
+}
+
+.content {
+  padding: 1.5rem 1rem;
+  @include breakpoint-min-size($desktop) {
+    @include flex-row;
+    justify-content: center;
+  }
+
+  &__summary {
+    @include m-bold-heading-large;
+    font-weight: 600;
+  }
+
+  &__box {
+    @include breakpoint-min-size($desktop) {
+      width: 70%;
+    }
+  }
+
+  &__bg {
+    width: 100%;
+    background-color: #faf7f6;
+    @include flex-column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+    border-radius: 24px;
+    margin-bottom: 2rem;
+  }
+
+  &__group {
+    padding-bottom: 2rem;
+  }
+
+  &__section-heading {
+    @include m-bold-heading;
+    @include removeMargin;
+    padding-bottom: 0.5rem;
+  }
+
+  &__body {
+    @include m-body;
+    @include removeMargin;
+  }
+
+  &__inline-link {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    color: $blue;
+    font-weight: 600;
+  }
+}
+
+.bullets {
+  @include flex-column;
+  width: 100%;
+
+  @include breakpoint-min-size($desktop) {
+    @include flex-row;
+    justify-content: space-between;
+  }
+
+  &__box {
+    padding-bottom: 2rem;
+  }
+
+  &__heading {
+    @include m-bold-heading;
+    @include removeMargin;
+    padding-bottom: 0.5rem;
+  }
+
+  &__list {
+    list-style: none;
+    padding-inline-start: 0;
+    @include removeMargin;
+  }
+
+  &__text {
+    @include m-body;
+    @include removeMargin;
+  }
+}

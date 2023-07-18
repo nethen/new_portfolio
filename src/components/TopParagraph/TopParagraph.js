@@ -28,7 +28,7 @@ function TopParagrah() {
             <div className="list__item">
               <img src={singlesparkle} className="single-sparkle" />
               <p className="list__desc">
-                Designing @
+                Previously designing @
                 <a href="" className="list__inline">
                   Guusto ↗
                 </a>
