@@ -5,6 +5,10 @@
 iframe {
   width: 70%;
   height: 12rem;
+
+  @include breakpoint-min-size($desktop) {
+    height: 24rem;
+  }
 }
 
 .content {
@@ -26,7 +30,8 @@ iframe {
   }
 
   &__bg {
-    width: 100%;
+    width: fit-content;
+    flex-grow: 1;
     background-color: #faf7f6;
     @include flex-column;
     align-items: center;
@@ -34,6 +39,18 @@ iframe {
     padding: 4rem 0;
     border-radius: 24px;
     margin-bottom: 2rem;
+
+    &-max {
+      width: 100%;
+      @include flex-column;
+
+      background-color: #faf7f6;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 0;
+      border-radius: 24px;
+      margin-bottom: 2rem;
+    }
   }
 
   &__group {
@@ -56,6 +73,28 @@ iframe {
     padding-right: 0.2rem;
     color: $blue;
     font-weight: 600;
+  }
+
+  &__important {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  &__examples {
+    @include flex-column;
+    gap: 1rem;
+
+    @include breakpoint-min-size($desktop) {
+      @include flex-row;
+    }
+  }
+
+  &__images {
+    max-width: 30rem;
+
+    &-tall {
+      max-height: 18rem;
+    }
   }
 }
 
@@ -88,4 +127,34 @@ iframe {
     @include m-body;
     @include removeMargin;
   }
+
+  &__layered {
+    list-style: lower-latin;
+  }
+}
+
+.pull-quote {
+  background-color: #faf7f6;
+  padding: 1rem;
+  border-left: 4px solid $blue;
+
+  &__highlight {
+    background-color: #d3eaff;
+    margin: 0rem 0.2rem;
+  }
+  &__body {
+    @include m-body;
+    @include removeMargin;
+    padding-bottom: 1rem;
+  }
+}
+
+.caption {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #5e5e5e;
+}
+
+#appendix-body {
+  padding-bottom: 1rem;
 }
