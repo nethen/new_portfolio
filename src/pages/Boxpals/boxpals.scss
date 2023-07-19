@@ -19,7 +19,9 @@ iframe {
   }
 
   &__summary {
-    @include m-bold-heading-large;
+    @include m-bold-heading;
+    @include removeMargin;
+    padding-bottom: 1rem;
     font-weight: 600;
   }
 
@@ -30,7 +32,6 @@ iframe {
   }
 
   &__bg {
-    width: 100%;
     flex-grow: 1;
     background-color: #faf7f6;
     @include flex-column;
@@ -85,7 +86,6 @@ iframe {
 
   &__examples {
     @include flex-column;
-    gap: 1rem;
 
     @include breakpoint-min-size($desktop) {
       @include flex-row;

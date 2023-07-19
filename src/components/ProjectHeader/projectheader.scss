@@ -5,29 +5,34 @@
 .p {
   &__header {
     width: 100%;
-    height: 30vh;
+    height: 12rem;
     background-color: #004921;
     @include flex-column;
+
+    @include breakpoint-min-size($desktop) {
+    }
   }
 
   &__arrow {
-    height: 4rem;
+    height: 3.5rem;
+    margin-left: 1rem;
 
     &-div {
       width: 100%;
       padding-top: 1rem;
-      padding-left: 0.2rem;
     }
   }
 
   &__logo {
-    height: 4rem;
+    height: 3rem;
+    max-width: 60%;
 
     &-div {
       width: 100%;
       @include flex-row;
       align-items: center;
       justify-content: center;
+      height: 100%;
     }
   }
 }
