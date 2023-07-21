@@ -51,3 +51,33 @@
 .mobile-menu {
   width: 2rem;
 }
+
+.mobile-nav {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  margin-bottom: 2rem;
+  display: block;
+
+  @include breakpoint-min-size($desktop) {
+    display: none;
+  }
+
+  &__box {
+    @include flex-column;
+  }
+
+  &__link {
+    padding: 1rem;
+    background-color: #faf7f6;
+    text-decoration: none;
+    font-family: "Fraunces 9pt";
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $blue;
+    &:hover {
+      background-color: $blue;
+      color: white;
+    }
+  }
+}

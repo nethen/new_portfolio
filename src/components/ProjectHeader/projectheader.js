@@ -1,19 +1,18 @@
 import { Link } from "react-router-dom";
 import "./projectheader.scss";
-import boxpalslogo from "../../assets/boxpals.svg";
 import backarrow from "../../assets/backarrow.svg";
 
-function projectHeader() {
+function projectHeader(props) {
   return (
     <>
-      <section className="p__header">
+      <section className="p__header" style={{ backgroundColor: props.bgcolor }}>
         <Link to="/">
           <div className="p__arrow-div">
             <img src={backarrow} className="p__arrow" />
           </div>
         </Link>
         <div className="p__logo-div">
-          <img src={boxpalslogo} className="p__logo" />
+          <img src={props.img} className="p__logo" />
         </div>
       </section>
     </>

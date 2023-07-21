@@ -1,14 +1,15 @@
-import "./boxpals.scss";
+import "./project.scss";
 import ProjectHeader from "../../components/ProjectHeader/projectheader";
 import spreadsheetExample from "../../assets/spreadsheet.jpg";
 import messengerExample from "../../assets/messenger.jpg";
 import igPost from "../../assets/igpost.jpg";
 import igMessage from "../../assets/igmessage.jpg";
+import boxpalslogo from "../../assets/boxpals.svg";
 
 function Boxpals() {
   return (
     <>
-      <ProjectHeader />
+      <ProjectHeader img={boxpalslogo} bgcolor="#004921" />
       <div className="content">
         <div className="content__box">
           <p className="content__summary">
@@ -27,7 +28,7 @@ function Boxpals() {
               allowfullscreen
             ></iframe>
           </div>
-
+          <p className="divider">Key Information</p>
           <div className="bullets">
             <div className="bullets__box">
               <p className="bullets__heading">Created</p>

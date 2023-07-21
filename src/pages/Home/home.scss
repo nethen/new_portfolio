@@ -4,13 +4,19 @@
 
 .projects-box {
   padding: 1.5rem 1rem;
-  @include breakpoint-min-size($desktop) {
+
+  @include breakpoint-min-size($tablet) {
     @include flex-row;
     justify-content: center;
   }
 
   &__container {
     width: 100%;
+
+    @include breakpoint-min-size($tablet) {
+      width: 86%;
+    }
+
     @include breakpoint-min-size($desktop) {
       width: 72%;
     }

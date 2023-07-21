@@ -27,7 +27,7 @@ iframe {
 
   &__box {
     @include breakpoint-min-size($desktop) {
-      width: 70%;
+      width: 72%;
     }
   }
 
@@ -164,4 +164,13 @@ iframe {
 
 #appendix-body {
   padding-bottom: 1rem;
+}
+
+.divider {
+  font-family: "Uncut Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: $blue;
+  border-bottom: 1px solid $blue;
+  padding-bottom: 0.2rem;
 }

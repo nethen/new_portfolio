@@ -27,6 +27,15 @@
 
   &__link {
     @include m-text-link;
+    font-weight: 600;
+
+    &:hover {
+      background-color: #d3eaff;
+    }
+  }
+
+  &__left {
+    padding-left: 1.5rem;
   }
 
   &__right {

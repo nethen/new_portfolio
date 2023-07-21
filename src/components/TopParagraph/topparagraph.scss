@@ -3,12 +3,19 @@
 @import "../../styles/partials/_Variables";
 
 .top-paragraph {
-  @include breakpoint-min-size($desktop) {
+  @include breakpoint-min-size($tablet) {
     @include flex-row;
     justify-content: center;
     padding: 2em 0rem;
   }
+
   &__container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    @include breakpoint-min-size($tablet) {
+      width: 86%;
+    }
+
     @include breakpoint-min-size($desktop) {
       width: 72%;
     }

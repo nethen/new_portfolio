@@ -11,15 +11,18 @@ function Home() {
   return (
     <>
       <Navbar></Navbar>
+
       <TopParagrah></TopParagrah>
       <section className="projects-box">
         <div className="projects-box__container">
-          <ProjectBlock
-            img={guustologo}
-            title="Reimagining what employee recognition looks like"
-            desc="Design @ Guusto"
-            bgcolor="#22315c"
-          ></ProjectBlock>
+          <Link className="projects-box__link" to="/guusto">
+            <ProjectBlock
+              img={guustologo}
+              title="Reimagining what employee recognition looks like"
+              desc="Design @ Guusto"
+              bgcolor="#22315c"
+            ></ProjectBlock>
+          </Link>
           <Link className="projects-box__link" to="/boxpals">
             <ProjectBlock
               img={boxpalslogo}
