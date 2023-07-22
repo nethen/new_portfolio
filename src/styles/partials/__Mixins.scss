@@ -63,7 +63,7 @@
 @mixin m-body-serif {
   font-family: "Fraunces 9pt";
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: $black;
 }
 
@@ -83,7 +83,7 @@
 
 @mixin d-heading-xl {
   font-family: "Fraunces 9pt", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 900;
   color: $black;
 }
@@ -91,7 +91,7 @@
 @mixin d-subheading-serif {
   font-family: "Fraunces 9pt";
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: $black;
 }
 
@@ -100,4 +100,10 @@
   font-weight: 500;
   font-size: 1.1rem;
   color: $black;
+}
+
+// COMMON STUFF
+@mixin centered {
+  justify-content: center;
+  align-items: center;
 }

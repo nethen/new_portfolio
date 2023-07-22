@@ -18,8 +18,12 @@
     border-radius: 16px;
     padding: 0rem 2rem;
 
+    @include breakpoint-min-size($tablet) {
+      width: 70%;
+    }
+
     @include breakpoint-min-size($desktop) {
-      width: 72%;
+      width: 60%;
       padding: 2rem 0;
     }
   }

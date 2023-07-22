@@ -14,11 +14,11 @@
     width: 100%;
 
     @include breakpoint-min-size($tablet) {
-      width: 86%;
+      width: 70%;
     }
 
     @include breakpoint-min-size($desktop) {
-      width: 72%;
+      width: 60%;
     }
   }
 

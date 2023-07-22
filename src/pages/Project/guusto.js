@@ -1,6 +1,7 @@
 import "./project.scss";
 import ProjectHeader from "../../components/ProjectHeader/projectheader";
 import guustologo from "../../assets/guusto.svg";
+import { Link } from "react-router-dom";
 
 function Guusto() {
   return (
@@ -11,10 +12,9 @@ function Guusto() {
           <div className="content__group">
             <p className="content__summary">So... I wore a lot of hats.</p>
             <p className="content__body">
-              During my 3+ years and multiple title adjustments at Guusto, I had
-              the opportunity to be involved in a wide scope of projects that
-              required a number of different skill sets. Including. but not
-              limited to:
+              During my 3+ years at Guusto, I had the opportunity to be involved
+              in a wide scope of projects that required a number of different
+              skill sets. Including. but not limited to:
             </p>
           </div>
           <div className="content__group">
@@ -25,6 +25,15 @@ function Guusto() {
               as well as creating the user flows for key product integrations
               such as Microsoft Teams and Slack.
             </p>
+
+            <Link to="" className="project-link__tag">
+              <div className="project-link">
+                <div className="coming-soon">
+                  <p className="coming-soon__tag">coming soon</p>
+                </div>
+                <p>Mobile Application Overhaul</p>
+              </div>
+            </Link>
           </div>
 
           <div className="content__group">

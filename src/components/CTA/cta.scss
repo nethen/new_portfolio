@@ -4,16 +4,24 @@
 
 .cta {
   padding: 0 1rem;
-  @include breakpoint-min-size($desktop) {
-    padding: 4rem 0rem;
+
+  @include breakpoint-min-size($tablet) {
     @include flex-row;
     align-items: center;
     justify-content: center;
   }
 
+  @include breakpoint-min-size($desktop) {
+    padding: 4rem 0rem;
+  }
+
   &__container {
+    @include breakpoint-min-size($tablet) {
+      width: 70%;
+    }
+
     @include breakpoint-min-size($desktop) {
-      width: 72%;
+      width: 60%;
     }
   }
 
@@ -25,6 +33,7 @@
   &__desc {
     @include m-body-serif;
     margin-block-start: 0;
+    max-width: 80%;
   }
 
   &__links {

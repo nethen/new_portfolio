@@ -33,10 +33,9 @@ iframe {
 
   &__bg {
     flex-grow: 1;
-    background-color: #faf7f6;
+    background-color: $tan-background;
     @include flex-column;
-    align-items: center;
-    justify-content: center;
+    @include centered;
     padding: 4rem 1rem;
     border-radius: 24px;
     margin-bottom: 2rem;
@@ -48,9 +47,8 @@ iframe {
     &-max {
       width: 100%;
       @include flex-column;
-      background-color: #faf7f6;
-      align-items: center;
-      justify-content: center;
+      @include centered;
+      background-color: $tan-background;
       padding: 4rem 0;
       border-radius: 24px;
       margin-bottom: 2rem;
@@ -141,12 +139,12 @@ iframe {
 }
 
 .pull-quote {
-  background-color: #faf7f6;
+  background-color: $tan-background;
   padding: 1rem;
   border-left: 4px solid $blue;
 
   &__highlight {
-    background-color: #d3eaff;
+    background-color: $blue-highlight;
     margin: 0rem 0.2rem;
   }
   &__body {
@@ -173,4 +171,26 @@ iframe {
   color: $blue;
   border-bottom: 1px solid $blue;
   padding-bottom: 0.2rem;
+}
+
+.project-link {
+  @include flex-row;
+  align-items: center;
+  gap: 1rem;
+
+  &__tag {
+    text-decoration: none;
+  }
+}
+
+.coming-soon {
+  background-color: $blue;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+
+  &__tag {
+    @include m-body;
+    @include removeMargin;
+    color: $white;
+  }
 }

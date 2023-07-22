@@ -21,8 +21,12 @@
     padding: 1.5rem 1rem;
     width: 100%;
 
+    @include breakpoint-min-size($tablet) {
+      width: 69%;
+    }
+
     @include breakpoint-min-size($desktop) {
-      width: 72%;
+      width: 60%;
     }
   }
 
@@ -55,7 +59,7 @@
 .mobile-nav {
   width: 100%;
   height: fit-content;
-  background-color: white;
+  background-color: #f5f0ec;
   margin-bottom: 2rem;
   display: block;
 
@@ -69,7 +73,7 @@
 
   &__link {
     padding: 1rem;
-    background-color: #faf7f6;
+    background-color: #f5f0ec;
     text-decoration: none;
     font-family: "Fraunces 9pt";
     font-size: 1.2rem;

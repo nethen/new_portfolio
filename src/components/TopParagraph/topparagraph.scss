@@ -12,12 +12,13 @@
   &__container {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    width: 90%;
     @include breakpoint-min-size($tablet) {
-      width: 86%;
+      width: 70%;
     }
 
     @include breakpoint-min-size($desktop) {
-      width: 72%;
+      width: 61%;
     }
   }
 }
@@ -46,7 +47,7 @@
 
     @include breakpoint-min-size($desktop) {
       font-size: 1.5rem;
-      max-width: 75%;
+      max-width: 86%;
       @include d-subheading-serif;
     }
   }
@@ -86,5 +87,9 @@
     font-weight: 600;
     color: $blue;
     padding-left: 0.3rem;
+
+    &:hover {
+      background-color: $tan-background;
+    }
   }
 }
