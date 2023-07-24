@@ -2,6 +2,7 @@ import "./project.scss";
 import ProjectHeader from "../../components/ProjectHeader/projectheader";
 import guustologo from "../../assets/guusto.svg";
 import { Link } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 
 function Guusto() {
   return (
@@ -25,15 +26,6 @@ function Guusto() {
               as well as creating the user flows for key product integrations
               such as Microsoft Teams and Slack.
             </p>
-
-            <Link to="" className="project-link__tag">
-              <div className="project-link">
-                <div className="coming-soon">
-                  <p className="coming-soon__tag">coming soon</p>
-                </div>
-                <p>Mobile Application Overhaul</p>
-              </div>
-            </Link>
           </div>
 
           <div className="content__group">
@@ -54,8 +46,36 @@ function Guusto() {
               guusto.com
             </p>
           </div>
+
+          <div className="content__group">
+            <p className="content__section-heading">Featured Projects</p>
+
+            <Link to="" className="project-link__tag">
+              <div className="project-link">
+                <div className="coming-soon">
+                  <p className="coming-soon__tag">coming soon</p>
+                </div>
+                <p>Mobile application refresh</p>
+              </div>
+            </Link>
+            <Link to="" className="project-link__tag">
+              <div className="project-link">
+                <div className="coming-soon">
+                  <p className="coming-soon__tag">coming soon</p>
+                </div>
+                <p>Brand update</p>
+              </div>
+            </Link>
+
+            <p className="content__body">
+              If you want to learn more about my time at Guusto, feel free to
+              reach out via email or on Linkedin.
+            </p>
+          </div>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }
