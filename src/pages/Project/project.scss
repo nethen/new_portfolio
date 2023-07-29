@@ -19,10 +19,10 @@ iframe {
   }
 
   &__summary {
-    @include m-bold-heading;
+    @include m-bold-heading-xl;
     @include removeMargin;
-    padding-bottom: 1rem;
     font-weight: 600;
+    padding-bottom: 4rem;
   }
 
   &__box {

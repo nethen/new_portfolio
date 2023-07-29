@@ -16,15 +16,15 @@ function CTA() {
 
           <div className="cta__links">
             <a href="" className="cta__item">
-              Email
+              Email ↗
             </a>
             <img src={singleSparkle} className="cta__sparkle" />
             <a href="" className="cta__item">
-              Linkedin
+              Linkedin ↗
             </a>
             <img src={singleSparkle} className="cta__sparkle" />
             <a href="" className="cta__item">
-              Instagram
+              Instagram ↗
             </a>
           </div>
         </div>

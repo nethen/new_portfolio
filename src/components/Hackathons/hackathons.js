@@ -8,7 +8,14 @@ function Hackathons() {
       <div className="hackathon">
         <h2 className="hackathon__header">Hackathon History</h2>
         <p className="hackathon__subheader">
-          View my projects for many of these events on Devpost ↗
+          View my projects for many of these events on{" "}
+          <a
+            href="https://devpost.com/michelle_swolfs?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
+            target="_blank"
+            className="devpost"
+          >
+            Devpost ↗
+          </a>
         </p>
 
         <HackathonItem

@@ -6,6 +6,11 @@
   &__top {
     @include flex-row;
     justify-content: center;
+    padding-bottom: 2.5rem;
+
+    @include breakpoint-min-size($tablet) {
+      padding-bottom: 0rem;
+    }
 
     @include breakpoint-min-size($desktop) {
       margin-bottom: 2rem;
@@ -39,14 +44,13 @@
   &__photo {
     order: 2;
     width: 100%;
+    max-width: 20rem;
 
     @include breakpoint-min-size($tablet) {
-      height: 8rem;
-      width: auto;
+      height: 12rem;
     }
 
     @include breakpoint-min-size($desktop) {
-      max-width: 20rem;
       height: 12rem;
       order: 1;
     }
@@ -105,7 +109,14 @@
 
 .professional-stuff {
   @include flex-row;
-  justify-content: center;
+  justify-content: left;
+  padding-bottom: 2.5rem;
+
+  @include breakpoint-min-size($tablet) {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+
   &__box {
     padding: 0 1rem;
     @include flex-column;
@@ -129,10 +140,12 @@
 
 .after-hours {
   padding: 0 1rem;
+  padding-bottom: 2.5rem;
 
   @include breakpoint-min-size($tablet) {
     display: flex;
     justify-content: center;
+    padding-bottom: 1.5rem;
   }
 
   &__container {

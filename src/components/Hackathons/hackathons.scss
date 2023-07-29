@@ -12,3 +12,11 @@
     @include m-bold-heading;
   }
 }
+
+.devpost {
+  @include m-text-link;
+
+  &:hover {
+    background-color: $tan-background;
+  }
+}
