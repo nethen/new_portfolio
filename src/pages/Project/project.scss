@@ -22,7 +22,20 @@ iframe {
     @include m-bold-heading-xl;
     @include removeMargin;
     font-weight: 600;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  &__story-heading {
+    @include m-bold-story-heading;
+    @include removeMargin;
+    padding-bottom: 1rem;
+
+    &-main {
+      @include m-bold-story-heading;
+      @include removeMargin;
+      padding-bottom: 1rem;
+      width: 86%;
+    }
   }
 
   &__box {
@@ -42,7 +55,7 @@ iframe {
     @include centered;
     padding: 4rem 1rem;
     border-radius: 24px;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 
     @include breakpoint-min-size($desktop) {
       width: fit-content;
@@ -61,6 +74,11 @@ iframe {
 
   &__group {
     padding-bottom: 2rem;
+
+    &-main {
+      width: 70%;
+      padding-bottom: 2rem;
+    }
   }
 
   &__section-heading {
@@ -72,6 +90,14 @@ iframe {
   &__body {
     @include m-body;
     @include removeMargin;
+    padding-bottom: 0.5rem;
+  }
+
+  &__img-caption {
+    @include m-body;
+    @include removeMargin;
+    font-weight: 700;
+    padding-top: 1rem;
   }
 
   &__inline-link {
@@ -79,6 +105,10 @@ iframe {
     padding-right: 0.2rem;
     color: $blue;
     font-weight: 600;
+
+    &:hover {
+      background-color: $tan-background;
+    }
   }
 
   &__important {
@@ -91,6 +121,7 @@ iframe {
 
     @include breakpoint-min-size($desktop) {
       @include flex-row;
+      gap: 1rem;
     }
   }
 
@@ -112,7 +143,6 @@ iframe {
   width: 100%;
 
   @include breakpoint-min-size($desktop) {
-    @include flex-row;
     justify-content: space-between;
   }
 
@@ -121,9 +151,9 @@ iframe {
   }
 
   &__heading {
-    @include m-bold-heading;
+    @include m-body;
     @include removeMargin;
-    padding-bottom: 0.5rem;
+    font-weight: 700;
   }
 
   &__list {
@@ -135,6 +165,8 @@ iframe {
   &__text {
     @include m-body;
     @include removeMargin;
+    width: 80%;
+    color: #616161;
   }
 
   &__layered {
@@ -144,17 +176,20 @@ iframe {
 
 .pull-quote {
   background-color: $tan-background;
-  padding: 1rem;
+  padding: 2rem;
   border-left: 4px solid $blue;
 
   &__highlight {
     background-color: $blue-highlight;
     margin: 0rem 0.2rem;
+    font-weight: 700;
   }
   &__body {
     @include m-body;
     @include removeMargin;
     padding-bottom: 1rem;
+    font-size: 1.2rem;
+    width: 86%;
   }
 }
 
@@ -197,5 +232,25 @@ iframe {
     @include m-body;
     @include removeMargin;
     color: $white;
+  }
+}
+
+.context__container {
+  @include breakpoint-min-size($desktop) {
+    @include flex-row;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
+}
+
+#context {
+  @include breakpoint-min-size($desktop) {
+    width: 68%;
+  }
+}
+
+#context-bullets {
+  @include breakpoint-min-size($desktop) {
+    width: 25%;
   }
 }

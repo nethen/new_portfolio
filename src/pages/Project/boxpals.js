@@ -9,18 +9,15 @@ import boxpalslogo from "../../assets/boxpals.svg";
 function Boxpals() {
   return (
     <>
-      <ProjectHeader img={boxpalslogo} bgcolor="#004921" />
+      {/* <ProjectHeader img={boxpalslogo} bgcolor="#004921" /> */}
       <div className="content">
         <div className="content__box">
-          <p className="divider">Summary</p>
-
           <p className="content__summary">
             Boxpals is a group order management solution that allows people in
             the same locale to benefit from the economic and environmental
             benefits of ordering from retailers together (as opposed to
             individually).
           </p>
-
           <div className="content__bg-max">
             <iframe
               src="https://www.youtube.com/embed/qaVvrXjcfbc"
@@ -29,53 +26,63 @@ function Boxpals() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
+            <p className="content__img-caption">
+              Recorded demo of developed version of Boxpals, presented at
+              BrainStation's demo day.
+            </p>
           </div>
           <p className="divider">Key Information</p>
-          <div className="bullets">
-            <div className="bullets__box">
-              <p className="bullets__heading">Created</p>
-              <p className="bullets__text">January - March 2023</p>
-            </div>
+          <div className="context__container">
+            <div className="content__group" id="context">
+              <p className="content__story-heading">
+                A way to continue my learning & development post-graduation.
+              </p>
 
-            <div className="bullets__box">
-              <p className="bullets__heading">Tools</p>
-              <ul className="bullets__list">
-                <li className="bullets__text">Figma + Figjam</li>
-                <li className="bullets__text">Visual Studio Code</li>
-              </ul>
-            </div>
-
-            <div className="bullets__box">
-              <p className="bullets__heading">For</p>
-              <p className="bullets__text">
-                BrainStation web development program
+              <p className="content__body">
+                Boxpals was created as the final project for BrainStation’s
+                part-time web development program. The primary goal of the
+                project is to showcase learnings from the program in a
+                self-directed project that was to be completed in addition to
+                regular course work.
+              </p>
+              <p className="content__body">
+                As this project was course work, the product remains
+                hypothetical. However, the project exceeded expectations by
+                receiving a grade of 98% and was well received by both the
+                teaching team and the public at BrainStation’s quarterly demo
+                day.
               </p>
             </div>
-          </div>
 
-          <div className="content__group">
-            <p className="content__section-heading">Results</p>
-            <p className="content__body">
-              As this project was course work, the product remains hypothetical.
-              However, the project exceeded expectations by receiving a grade of
-              98% and was well received by both the teaching team and the public
-              at BrainStation’s quarterly demo day.
+            <div className="bullets" id="context-bullets">
+              <div className="bullets__box">
+                <p className="bullets__heading">Created</p>
+                <p className="bullets__text">January - March 2023</p>
+              </div>
+
+              <div className="bullets__box">
+                <p className="bullets__heading">For</p>
+                <p className="bullets__text">
+                  BrainStation web development program
+                </p>
+              </div>
+
+              <div className="bullets__box">
+                <p className="bullets__heading">Tools</p>
+                <ul className="bullets__list">
+                  <li className="bullets__text">Figma + Figjam</li>
+                  <li className="bullets__text">Visual Studio Code</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p className="divider">Process</p>
+
+          <div className="content__group-main">
+            <p className="content__story-heading">
+              Where to start: combining personal experience with secondary
+              research
             </p>
-          </div>
-
-          <div className="content__group">
-            <p className="content__section-heading">Context</p>
-            <p className="content__body">
-              Boxpals was created as the final project for BrainStation’s
-              part-time web development program. The primary goal of the project
-              is to showcase learnings from the program in a solo self-directed
-              side project that was to be completed in addition to regular
-              course work.
-            </p>
-          </div>
-
-          <div className="content__group">
-            <p className="content__section-heading">Process</p>
             <p className="content__body">
               With
               <a
@@ -91,7 +98,6 @@ function Boxpals() {
               sources.
             </p>
           </div>
-
           <div className="content__group">
             <div className="pull-quote">
               <p className="pull-quote__body">
@@ -113,13 +119,16 @@ function Boxpals() {
                 of the total GHG emissions.”
               </p>
 
-              <p className="pull-quote__body">
+              <a
+                className="content__inline-link"
+                href="https://earth.org/online-shopping-and-its-environmental-impact/#:~:text=The%20transport%20of%20goods%20across,of%20the%20total%20GHG%20emissions."
+                target="_blank"
+              >
                 — Martina Igini, Managing Editor @ earth.org
-              </p>
+              </a>
             </div>
           </div>
-
-          <div className="content__group">
+          <div className="content__group-main">
             <p className="content__body">
               I uncovered how the shipping and over-packing of goods are some of
               the largest contributors to the environmental impact of online
@@ -127,31 +136,27 @@ function Boxpals() {
               experiences, which led to the question:
             </p>
           </div>
-
           <div className="content__group">
-            <p className="content__body">
-              <span className="content__important">
-                How might we lower the environmental impact of online shopping
-                of discretionary purchases without losing consumer interest and
-                harming business owners’ bottom line?
-              </span>
+            <p className="content__story-heading-main">
+              How might we lower the environmental impact of online shopping of
+              discretionary purchases without losing consumer interest and
+              harming business owners’ bottom line?
             </p>
           </div>
-
-          <div className="content__group">
+          <div className="content__group-main">
             <p className="content__body">
               Upon further reflection, I realized that this question has already
-              been addressed through how I, along with many others order items
-              we are not in a rush for. Two examples come to mind:
+              been addressed through how I, along with many others, order items
+              we are not in a rush for. Two examples that come to mind are:
             </p>
-          </div>
 
-          <div className="content__group">
             <p className="content__body">
               Locally, I have organized and participated in online orders where
               my friends and I have ordered from the same retailers together in
               order to reach common discount thresholds or to save on shipping
-              costs.
+              costs. This directly decreases the environmental impact of these
+              purchases by reducing amount of shipping materials necessary to
+              fufill them.
             </p>
           </div>
 
@@ -164,13 +169,11 @@ function Boxpals() {
               <img className="content__images-tall" src={messengerExample} />
             </div>
           </div>
-
           <div className="content__group">
             <p className="content__body caption"></p>
             However, group orders between friends commonly results in
             spreadsheet management or disorganized instant messages.
           </div>
-
           <div className="content__group">
             <div className="content__body">
               On a larger scale, a community that has utilized this group buy
@@ -182,7 +185,6 @@ function Boxpals() {
               and save on shipping and other external costs.
             </div>
           </div>
-
           <div className="content__examples">
             <div className="content__bg">
               <img className="content__images" src={igPost} />
@@ -190,9 +192,9 @@ function Boxpals() {
 
             <div className="content__bg">
               <img className="content__images" src={igMessage} />
+              <p className="content__body">*info blurred for privacy</p>
             </div>
           </div>
-
           <div className="content__group">
             <p classNmae="content__body caption">
               Group orders in this context are advertised and managed
@@ -200,7 +202,6 @@ function Boxpals() {
               spreadsheets.
             </p>
           </div>
-
           <div className="content__group">
             <p className="content__section-heading">Insights</p>
 
@@ -234,7 +235,6 @@ function Boxpals() {
               </li>
             </ol>
           </div>
-
           <div className="content__group">
             <p className="content__section-heading">Solution</p>
             <p className="content__body">
@@ -247,7 +247,6 @@ function Boxpals() {
               would be much harder to do individually.
             </p>
           </div>
-
           <div className="content__group">
             <p className="content__body">
               A key factor that shaped this project was technical constraints.
@@ -259,7 +258,6 @@ function Boxpals() {
               within the time constraints.
             </p>
           </div>
-
           <div className="content__group">
             <p className="content__section-heading">Validation</p>
             <div className="pull-quote">
@@ -277,7 +275,6 @@ function Boxpals() {
               </p>
             </div>
           </div>
-
           <div className="content__group">
             <p className="content__section-heading">Reflection</p>
             <p className="content__body">
@@ -295,7 +292,6 @@ function Boxpals() {
               payments whether through something like Stripe or other means.
             </p>
           </div>
-
           <div className="content__group">
             <p className="content__section-heading">Appendix</p>
             <p className="content__body" id="appendix-body">

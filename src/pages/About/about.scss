@@ -47,11 +47,11 @@
     max-width: 20rem;
 
     @include breakpoint-min-size($tablet) {
-      height: 12rem;
+      height: 13rem;
     }
 
     @include breakpoint-min-size($desktop) {
-      height: 12rem;
+      height: 13rem;
       order: 1;
     }
   }

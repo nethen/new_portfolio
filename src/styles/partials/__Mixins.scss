@@ -53,6 +53,13 @@
   color: $black;
 }
 
+@mixin m-bold-story-heading {
+  font-family: "Fraunces 9pt";
+  font-weight: 600;
+  font-size: 2rem;
+  color: $black;
+}
+
 @mixin m-bold-heading-xl {
   font-family: "Fraunces 9pt";
   font-weight: 600;
