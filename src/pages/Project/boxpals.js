@@ -169,20 +169,20 @@ function Boxpals() {
               <img className="content__images-tall" src={messengerExample} />
             </div>
           </div>
-          <div className="content__group">
+          <div className="content__group-main">
             <p className="content__body caption"></p>
             However, group orders between friends commonly results in
             spreadsheet management or disorganized instant messages.
           </div>
-          <div className="content__group">
+          <div className="content__group-main">
             <div className="content__body">
               On a larger scale, a community that has utilized this group buy
               model is the k-pop buy/sell/trade community. Businesses such as
               Neokyo and Buyee, as well as proxy services such as K-Friday,
               support group order managers is obtaining products from overseas
               (in this case South Korea). Fans join these group orders in order
-              to obtain items for cheaper than from stores in close proximity,
-              and save on shipping and other external costs.
+              to obtain items at lower prices, and save on shipping and other
+              external costs.
             </div>
           </div>
           <div className="content__examples">
@@ -195,18 +195,18 @@ function Boxpals() {
               <p className="content__body">*info blurred for privacy</p>
             </div>
           </div>
-          <div className="content__group">
+          <div className="content__group-main">
             <p classNmae="content__body caption">
               Group orders in this context are advertised and managed
               exclusively through social media (most commonly Instagram) and
               spreadsheets.
             </p>
           </div>
-          <div className="content__group">
-            <p className="content__section-heading">Insights</p>
+          <p className="divider">Insights</p>
 
+          <div className="content__group-main">
             <ol>
-              <li className="bullets__text">
+              <li className="content__story-heading">
                 Online orders containing multiple items ultimately benefit
                 businesses, customers, and the planet.
               </li>
@@ -229,25 +229,26 @@ function Boxpals() {
                   resources.
                 </li>
               </ol>
-              <li className="bullets__text">
-                The idea of a “group order” is not new, but has not been widely
-                taken advantage of in many applicable use cases.
+              <li className="content__story-heading">
+                The idea of a “group order” is not new, but lacks a solution
+                that works in a variety of use cases.
               </li>
             </ol>
           </div>
-          <div className="content__group">
-            <p className="content__section-heading">Solution</p>
-            <p className="content__body">
+          <p className="divider">Solution</p>
+
+          <div className="content__group-main">
+            <p className="content__story-heading">
               Boxpals is a group order management platform that allows friends
               and people within the same locale to place online orders together
-              without the hassle of extra tools. By ordering together, By
-              ordering together, people are able to reduce their carbon
+              without the hassle of extra tools.
+            </p>
+            <p className="content__body">
+              By ordering together, people are able to reduce their carbon
               footprint by placing bulk shipments instead of several smaller
               ones, and reach thresholds for additional monetary savings which
               would be much harder to do individually.
             </p>
-          </div>
-          <div className="content__group">
             <p className="content__body">
               A key factor that shaped this project was technical constraints.
               Due to the nature of the course, there was much larger emphasis on
@@ -258,8 +259,10 @@ function Boxpals() {
               within the time constraints.
             </p>
           </div>
+
+          <p className="divider">Validation</p>
+
           <div className="content__group">
-            <p className="content__section-heading">Validation</p>
             <div className="pull-quote">
               <p className="pull-quote__body">
                 ”Overall you did an amazing job with your capstone! Boxpals is a
@@ -270,13 +273,19 @@ function Boxpals() {
                 in my own life!”
               </p>
 
-              <p className="pull-quote__body">
+              <p className="content__body">
                 — Senior Developer & member of BrainStation teaching team.
               </p>
             </div>
           </div>
-          <div className="content__group">
-            <p className="content__section-heading">Reflection</p>
+
+          <p className="divider">Reflection</p>
+
+          <div className="content__group-main">
+            <p className="content__story-heading">
+              A successful illustration of learning and applying new skills, as
+              well as understanding the tradeoffs required to meet deadlines.
+            </p>
             <p className="content__body">
               As a designer by trade, I’m proud of that I was able to build this
               proof of concept within the time constraints, using both my design
@@ -292,8 +301,9 @@ function Boxpals() {
               payments whether through something like Stripe or other means.
             </p>
           </div>
-          <div className="content__group">
-            <p className="content__section-heading">Appendix</p>
+          <p className="divider">Appendix</p>
+
+          <div className="content__group-main">
             <p className="content__body" id="appendix-body">
               On the development side of things, the tech stack for Boxpals is
               as follows:
