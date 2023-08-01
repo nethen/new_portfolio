@@ -111,6 +111,13 @@ iframe {
     }
   }
 
+  &__big-link {
+    @include removeMargin;
+    @include m-body;
+    font-size: 2rem;
+    color: $blue;
+  }
+
   &__important {
     font-size: 1.2rem;
     font-weight: 600;
@@ -217,6 +224,10 @@ iframe {
   align-items: center;
   gap: 1rem;
   padding-bottom: 0.5rem;
+
+  &:hover {
+    background-color: $tan-background;
+  }
 
   &__tag {
     text-decoration: none;
