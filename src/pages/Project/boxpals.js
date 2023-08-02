@@ -5,11 +5,12 @@ import messengerExample from "../../assets/messenger.jpg";
 import igPost from "../../assets/igpost.jpg";
 import igMessage from "../../assets/igmessage.jpg";
 import boxpalslogo from "../../assets/boxpals.svg";
+import boxpalsgroup from "../../assets/boxpals_group.svg";
 
 function Boxpals() {
   return (
     <>
-      {/* <ProjectHeader img={boxpalslogo} bgcolor="#004921" /> */}
+      <ProjectHeader img={boxpalsgroup} bgcolor="#8FBAA3" />
       <div className="content">
         <div className="content__box">
           <p className="content__summary">
@@ -18,19 +19,7 @@ function Boxpals() {
             benefits of ordering from retailers together (as opposed to
             individually).
           </p>
-          <div className="content__bg-max">
-            <iframe
-              src="https://www.youtube.com/embed/qaVvrXjcfbc"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <p className="content__img-caption">
-              Recorded demo of developed version of Boxpals, presented at
-              BrainStation's demo day.
-            </p>
-          </div>
+
           <p className="divider">Key Information</p>
           <div className="context__container">
             <div className="content__group" id="context">
@@ -237,6 +226,20 @@ function Boxpals() {
           </div>
           <p className="divider">Solution</p>
 
+          <div className="content__bg-max">
+            <iframe
+              src="https://www.youtube.com/embed/qaVvrXjcfbc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <p className="content__img-caption">
+              Recorded demo of developed version of Boxpals, presented at
+              BrainStation's demo day.
+            </p>
+          </div>
+
           <div className="content__group-main">
             <p className="content__story-heading">
               Boxpals is a group order management platform that allows friends
@@ -309,7 +312,7 @@ function Boxpals() {
               as follows:
             </p>
 
-            <div className="bullets">
+            <div className="bullets" id="appendix">
               <div className="bullets__box">
                 <p className="bullets__heading">Client</p>
                 <ul className="bullets__list">
