@@ -48,11 +48,16 @@ function Navbar() {
 
           <div className="nav__right-container">
             <div className="nav__links">
-              <NavLink to="/">Work</NavLink>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/" className="nav__links-item">
+                Work
+              </NavLink>
+              <NavLink to="/about" className="nav__links-item">
+                About
+              </NavLink>
               <NavLink
                 to="https://drive.google.com/file/d/1wfEGLT4n4xeaODvOHWjHYeNA15IRBg2y/view?usp=sharing"
                 target="_blank"
+                className="nav__links-item"
               >
                 Resume
               </NavLink>

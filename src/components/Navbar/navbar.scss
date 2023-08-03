@@ -6,7 +6,7 @@
   text-decoration: none;
 
   &:hover {
-    color: #b88700;
+    background-color: $tan-background;
   }
 }
 
@@ -37,6 +37,11 @@
       gap: 1rem;
       @include m-text-link;
       @include flex-row;
+    }
+
+    &-item {
+      @include d-body;
+      color: $blue;
     }
   }
 
