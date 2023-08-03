@@ -86,6 +86,7 @@ iframe {
 
   &__section-heading {
     @include m-bold-heading;
+    font-size: 1.6rem;
     @include removeMargin;
     padding-bottom: 0.5rem;
   }
@@ -175,12 +176,21 @@ iframe {
   &__text {
     @include m-body;
     @include removeMargin;
-    width: 80%;
+    width: 100%;
     color: #616161;
+
+    &-insights {
+      @include m-body;
+      @include removeMargin;
+      width: 100%;
+      color: #616161;
+      padding-bottom: 0.5rem;
+    }
   }
 
   &__layered {
     list-style: lower-latin;
+    padding-bottom: 2rem;
   }
 }
 
@@ -274,4 +284,20 @@ iframe {
   @include breakpoint-min-size($desktop) {
     @include flex-row;
   }
+}
+
+.project__img {
+  width: 80%;
+}
+
+#long {
+  width: 80%;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.solution-box {
+  padding-bottom: 4rem;
 }

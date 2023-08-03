@@ -4,8 +4,11 @@ import spreadsheetExample from "../../assets/spreadsheet.jpg";
 import messengerExample from "../../assets/messenger.jpg";
 import igPost from "../../assets/igpost.jpg";
 import igMessage from "../../assets/igmessage.jpg";
-import boxpalslogo from "../../assets/boxpals.svg";
-import boxpalsgroup from "../../assets/boxpals_group.svg";
+import boxpalsgroup from "../../assets/boxpals_group.png";
+import boxpalslogin from "../../assets/boxpals_login.png";
+import boxpalshome from "../../assets/boxpals_home.png";
+import boxpalsorder from "../../assets/boxpals_order.png";
+import boxpalsadditem from "../../assets/boxpals_additem.png";
 
 function Boxpals() {
   return (
@@ -51,7 +54,7 @@ function Boxpals() {
 
               <div className="bullets__box">
                 <p className="bullets__heading">For</p>
-                <p className="bullets__text">
+                <p className="bullets__text" id="long">
                   BrainStation web development program
                 </p>
               </div>
@@ -200,22 +203,30 @@ function Boxpals() {
                 businesses, customers, and the planet.
               </li>
               <ol className="bullets__layered">
-                <li className="bullets__text">
-                  For businesses: Businesses receiving large orders (as opposed
-                  to multiple smaller ones) is ultimately more profitable for
-                  business owners. This is reinforced by the idea of a minimum
-                  order quantity (MOQ) that many large businesses implement.
+                <li className="bullets__text-insights">
+                  <span className="bold">For businesses:</span> Businesses
+                  receiving large orders (as opposed to multiple smaller ones)
+                  is ultimately more profitable for business owners. This is
+                  reinforced by the idea of a
+                  <a
+                    href="https://www.netsuite.com/portal/resource/articles/inventory-management/minimum-order-quantity-moq.shtml"
+                    className="content__inline-link"
+                  >
+                    minimum order quantity (MOQ)
+                  </a>
+                  that many large businesses implement.
                 </li>
 
-                <li className="bullets__text">
-                  For customers: Customers save money by reaching thresholds for
-                  additional savings, which would be harder to reach alone.
+                <li className="bullets__text-insights">
+                  <span className="bold">For customers:</span> Customers save
+                  money by reaching thresholds for additional savings, which
+                  would be harder to reach alone.
                 </li>
 
-                <li className="bullets__text">
-                  For the planet: Ordering in groups plays a part in reducing
-                  carbon emissions from shipping and packaging by requiring less
-                  resources.
+                <li className="bullets__text-insights">
+                  <span className="bold">For the planet:</span> Ordering in
+                  groups plays a part in reducing carbon emissions from shipping
+                  and packaging by requiring less resources.
                 </li>
               </ol>
               <li className="content__story-heading">
@@ -261,6 +272,83 @@ function Boxpals() {
               coursework majorily shaped the outcome that I was able to produce
               within the time constraints.
             </p>
+          </div>
+
+          <p className="divider">Design Highlights</p>
+
+          <div className="content__bg-max">
+            <img src={boxpalslogin} className="project__img" />
+          </div>
+          <div className="solution-box">
+            <div className="content__group-main">
+              <p className="content__section-heading">
+                Establishing a visual concept
+              </p>
+
+              <p className="content__body">
+                The log in page was an opportunity to present the "shipping box"
+                visual concept to customers through the supporting illustrations
+                on this page.
+              </p>
+            </div>
+          </div>
+
+          <div className="content__bg-max">
+            <img src={boxpalshome} className="project__img" />
+          </div>
+          <div className="solution-box">
+            <div className="content__group-main">
+              <p className="content__section-heading">
+                See what was ordered, with who, and from where, all in one
+                place.
+              </p>
+
+              <p className="content__body">
+                This page acts as a centralized place for customers to see what
+                they ordered across all of the group orders they are
+                participating in, the status of all their group orders, as well
+                as any orders that need them to take action.
+              </p>
+            </div>
+          </div>
+
+          <div className="content__bg-max">
+            <img src={boxpalsorder} className="project__img" />
+          </div>
+
+          <div className="solution-box">
+            <div className="content__group-main">
+              <p className="content__section-heading">
+                Gathering details in a visual way
+              </p>
+
+              <p className="content__body">
+                Axe the disorganized direct messages, multi-line spreadsheets,
+                and excel formulas. With this visual approach, group order
+                participants and their managers can see all of the details in a
+                transparent way.
+              </p>
+            </div>
+          </div>
+
+          <div className="content__bg-max">
+            <img src={boxpalsadditem} className="project__img" />
+          </div>
+          <div className="solution-box">
+            <div className="content__group-main">
+              <p className="content__section-heading">
+                Wouldn't it be cool if the platform grabbed all of the item's
+                information through its URL?
+              </p>
+
+              <p className="content__body">
+                Yes, it would. However through trial and error, I learned how
+                technically difficult and costly implementing it would be due to
+                the fact that it would require a lot of API calls to a large
+                number of organizations (some of which do not have a public
+                facing API). This resulted in the manual solution seen above.
+              </p>
+            </div>
           </div>
 
           <p className="divider">Validation</p>
