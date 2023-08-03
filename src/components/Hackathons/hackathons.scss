@@ -1,0 +1,22 @@
+@import "../../styles/partials/_FontStyles";
+@import "../../styles/partials/_Mixins";
+@import "../../styles/partials/_Variables";
+
+.hackathon {
+  @include breakpoint-min-size($desktop) {
+    @include flex-column;
+  }
+
+  &__header {
+    @include removeMargin;
+    @include m-bold-heading;
+  }
+}
+
+.devpost {
+  @include m-text-link;
+
+  &:hover {
+    background-color: $tan-background;
+  }
+}

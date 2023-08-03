@@ -1,0 +1,123 @@
+@import "../../styles/partials/_Variables";
+
+// FLEXBOX
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// MEDIA QUERIES
+@mixin breakpoint-min-size($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin breakpoint-range($breakpoint1, $breakpoint2) {
+  @media (min-width: $breakpoint1) and (max-width: $breakpoint2) {
+    @content;
+  }
+}
+
+@mixin breakpoint-max-size($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+// FONT STYLES - MOBILE
+
+@mixin m-h1-style {
+  font-family: "Fraunces 9pt", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: $black;
+}
+
+@mixin m-bold-heading-large {
+  font-family: "Fraunces 9pt";
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: $black;
+}
+
+@mixin m-bold-heading {
+  font-family: "Fraunces 9pt";
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: $black;
+}
+
+@mixin m-bold-story-heading {
+  font-family: "Fraunces 9pt";
+  font-weight: 600;
+  font-size: 2rem;
+  color: $black;
+}
+
+@mixin m-bold-heading-xl {
+  font-family: "Fraunces 9pt";
+  font-weight: 600;
+  font-size: 2rem;
+  color: $black;
+}
+
+@mixin m-body {
+  font-family: "Uncut Sans";
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: $black;
+}
+
+@mixin m-body-serif {
+  font-family: "Fraunces 9pt";
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: $black;
+}
+
+@mixin m-text-link {
+  font-family: "Uncut Sans";
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: $blue;
+}
+
+@mixin removeMargin {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+// FONT STYLES - DESKTOP
+
+@mixin d-heading-xl {
+  font-family: "Fraunces 9pt", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: $black;
+}
+
+@mixin d-subheading-serif {
+  font-family: "Fraunces 9pt";
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: $black;
+}
+
+@mixin d-body {
+  font-family: "Uncut Sans";
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: $black;
+}
+
+// COMMON STUFF
+@mixin centered {
+  justify-content: center;
+  align-items: center;
+}

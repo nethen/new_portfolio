@@ -1,0 +1,61 @@
+@import "../../styles/partials/_FontStyles";
+@import "../../styles/partials/_Mixins";
+@import "../../styles/partials/_Variables";
+
+.project {
+  @include breakpoint-min-size($desktop) {
+    margin-bottom: 3rem;
+    max-width: 100%;
+  }
+
+  &__img-container {
+    height: 12rem;
+    width: 100%;
+    border-radius: 8px;
+    @include flex-row;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint-min-size($desktop) {
+      height: 16rem;
+    }
+  }
+
+  &__info {
+    padding-top: 0.6rem;
+    padding-bottom: 2rem;
+
+    @include breakpoint-min-size($desktop) {
+      @include flex-row;
+      justify-content: space-between;
+      max-width: 100%;
+      align-items: flex-start;
+    }
+  }
+
+  &__logo {
+    @include breakpoint-min-size($desktop) {
+      width: 10rem;
+    }
+  }
+
+  &__title {
+    @include m-bold-heading;
+    @include removeMargin;
+    @include breakpoint-min-size($desktop) {
+      font-size: 1.3rem;
+      max-width: 50%;
+    }
+  }
+
+  &__desc {
+    @include m-body;
+    padding-top: 0.4rem;
+    @include removeMargin;
+
+    @include breakpoint-min-size($desktop) {
+      padding-top: 0.4rem;
+      font-size: 1.1;
+    }
+  }
+}

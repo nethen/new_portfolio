@@ -1,0 +1,95 @@
+@import "../../styles/partials/_FontStyles";
+@import "../../styles/partials/_Mixins";
+@import "../../styles/partials/_Variables";
+
+.top-paragraph {
+  @include breakpoint-min-size($tablet) {
+    @include flex-row;
+    justify-content: center;
+    padding: 2em 0rem;
+  }
+
+  &__container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 90%;
+    @include breakpoint-min-size($tablet) {
+      width: 70%;
+    }
+
+    @include breakpoint-min-size($desktop) {
+      width: 61%;
+    }
+  }
+}
+
+.big {
+  &__container {
+    @include flex-row;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  &__title {
+    @include m-h1-style;
+    @include removeMargin;
+    padding-left: 1rem;
+
+    @include breakpoint-min-size($desktop) {
+      font-size: 2rem;
+    }
+  }
+
+  &__desc {
+    @include removeMargin;
+    @include m-bold-heading;
+    padding: 1rem;
+
+    @include breakpoint-min-size($desktop) {
+      font-size: 1.5rem;
+      max-width: 86%;
+      @include d-subheading-serif;
+    }
+  }
+}
+
+.sparkle-group {
+  height: 2rem;
+  padding-top: 0.2rem;
+  display: none;
+
+  @include breakpoint-min-size($desktop) {
+    display: block;
+  }
+}
+
+.list {
+  &__container {
+    padding: 0rem 1rem;
+
+    @include breakpoint-min-size($desktop) {
+      @include flex-row;
+      gap: 0.6rem;
+    }
+  }
+
+  &__desc {
+    @include removeMargin;
+  }
+
+  &__item {
+    @include flex-row;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  &__inline {
+    font-weight: 600;
+    color: $blue;
+    padding-left: 0.3rem;
+
+    &:hover {
+      background-color: $tan-background;
+    }
+  }
+}

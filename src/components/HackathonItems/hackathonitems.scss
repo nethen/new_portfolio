@@ -1,0 +1,29 @@
+@import "../../styles/partials/_FontStyles";
+@import "../../styles/partials/_Mixins";
+@import "../../styles/partials/_Variables";
+
+.hackathon-item {
+  @include flex-row;
+  justify-content: space-between;
+  height: 2rem;
+  align-items: center;
+
+  &__main {
+    @include flex-row;
+    gap: 0.5rem;
+    height: fit-content;
+  }
+
+  &__name {
+    @include removeMargin;
+    padding-bottom: 0.25rem;
+  }
+
+  &__icon {
+    height: 1.25rem;
+  }
+
+  &__date {
+    width: 10%;
+  }
+}

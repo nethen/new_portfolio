@@ -1,0 +1,303 @@
+@import "../../styles/partials/_FontStyles";
+@import "../../styles/partials/_Mixins";
+@import "../../styles/partials/_Variables";
+
+iframe {
+  width: 70%;
+  height: 12rem;
+
+  @include breakpoint-min-size($desktop) {
+    height: 24rem;
+  }
+}
+
+.content {
+  padding: 1.5rem 1rem;
+  @include breakpoint-min-size($tablet) {
+    @include flex-row;
+    justify-content: center;
+  }
+
+  &__summary {
+    @include m-bold-heading-xl;
+    @include removeMargin;
+    font-weight: 600;
+    padding: 3rem 0;
+  }
+
+  &__story-heading {
+    @include m-bold-story-heading;
+    @include removeMargin;
+    padding-bottom: 1rem;
+
+    &-main {
+      @include m-bold-story-heading;
+      @include removeMargin;
+      padding-bottom: 1rem;
+      width: 86%;
+    }
+  }
+
+  &__box {
+    @include breakpoint-min-size($tablet) {
+      width: 70%;
+    }
+
+    @include breakpoint-min-size($desktop) {
+      width: 60%;
+    }
+  }
+
+  &__bg {
+    flex-grow: 1;
+    background-color: $tan-background;
+    @include flex-column;
+    @include centered;
+    padding: 4rem 1rem;
+    border-radius: 24px;
+    margin-bottom: 0.5rem;
+
+    @include breakpoint-min-size($desktop) {
+      width: fit-content;
+    }
+
+    &-max {
+      width: 100%;
+      @include flex-column;
+      @include centered;
+      background-color: $tan-background;
+      padding: 4rem 0;
+      border-radius: 24px;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__group {
+    padding-bottom: 2rem;
+
+    &-main {
+      width: 100%;
+      @include breakpoint-min-size($desktop) {
+        width: 72%;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+
+  &__section-heading {
+    @include m-bold-heading;
+    font-size: 1.6rem;
+    @include removeMargin;
+    padding-bottom: 0.5rem;
+  }
+
+  &__body {
+    @include m-body;
+    @include removeMargin;
+    padding-bottom: 0.5rem;
+  }
+
+  &__img-caption {
+    @include m-body;
+    @include removeMargin;
+    font-weight: 700;
+    padding-top: 1rem;
+  }
+
+  &__inline-link {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    color: $blue;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $tan-background;
+    }
+  }
+
+  &__big-link {
+    @include removeMargin;
+    @include m-body;
+    font-size: 2rem;
+    color: $blue;
+  }
+
+  &__important {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  &__examples {
+    @include flex-column;
+
+    @include breakpoint-min-size($desktop) {
+      @include flex-row;
+      gap: 1rem;
+    }
+  }
+
+  &__images {
+    max-width: 17rem;
+
+    @include breakpoint-min-size($desktop) {
+      max-width: 30rem;
+    }
+
+    &-tall {
+      max-height: 18rem;
+    }
+  }
+}
+
+.bullets {
+  @include flex-column;
+  width: 100%;
+
+  @include breakpoint-min-size($desktop) {
+    justify-content: space-between;
+  }
+
+  &__box {
+    padding-bottom: 2rem;
+  }
+
+  &__heading {
+    @include m-body;
+    @include removeMargin;
+    font-weight: 700;
+  }
+
+  &__list {
+    list-style: none;
+    padding-inline-start: 0;
+    @include removeMargin;
+  }
+
+  &__text {
+    @include m-body;
+    @include removeMargin;
+    width: 100%;
+    color: #616161;
+
+    &-insights {
+      @include m-body;
+      @include removeMargin;
+      width: 100%;
+      color: #616161;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  &__layered {
+    list-style: lower-latin;
+    padding-bottom: 2rem;
+  }
+}
+
+.pull-quote {
+  background-color: $tan-background;
+  padding: 2rem;
+  border-left: 4px solid $blue;
+
+  &__highlight {
+    background-color: $blue-highlight;
+    margin: 0rem 0.2rem;
+    font-weight: 700;
+  }
+  &__body {
+    @include m-body;
+    @include removeMargin;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    width: 86%;
+  }
+}
+
+.caption {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #5e5e5e;
+}
+
+#appendix-body {
+  padding-bottom: 1rem;
+}
+
+.divider {
+  font-family: "Uncut Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: $blue;
+  border-bottom: 1px solid $blue;
+  padding-bottom: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.project-link {
+  @include flex-row;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+
+  &:hover {
+    background-color: $tan-background;
+  }
+
+  &__tag {
+    text-decoration: none;
+  }
+}
+
+.coming-soon {
+  background-color: $blue;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+
+  &__tag {
+    @include m-body;
+    @include removeMargin;
+    color: $white;
+  }
+}
+
+.context__container {
+  @include breakpoint-min-size($desktop) {
+    @include flex-row;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
+}
+
+#context {
+  @include breakpoint-min-size($desktop) {
+    width: 68%;
+  }
+}
+
+#context-bullets {
+  @include breakpoint-min-size($desktop) {
+    width: 25%;
+  }
+}
+
+#appendix {
+  @include breakpoint-min-size($desktop) {
+    @include flex-row;
+  }
+}
+
+.project__img {
+  width: 80%;
+}
+
+#long {
+  width: 80%;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.solution-box {
+  padding-bottom: 4rem;
+}

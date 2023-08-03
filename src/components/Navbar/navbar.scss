@@ -1,0 +1,92 @@
+@import "../../styles/partials/_FontStyles";
+@import "../../styles/partials/_Mixins";
+@import "../../styles/partials/_Variables";
+
+.nav__links > a {
+  text-decoration: none;
+
+  &:hover {
+    background-color: $tan-background;
+  }
+}
+
+.nav {
+  @include flex-row;
+  justify-content: center;
+
+  &__container {
+    @include flex-row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    width: 100%;
+
+    @include breakpoint-min-size($tablet) {
+      width: 69%;
+    }
+
+    @include breakpoint-min-size($desktop) {
+      width: 60%;
+    }
+  }
+
+  &__links {
+    display: none;
+
+    @include breakpoint-min-size($tablet) {
+      gap: 1rem;
+      @include m-text-link;
+      @include flex-row;
+    }
+
+    &-item {
+      @include d-body;
+      color: $blue;
+    }
+  }
+
+  &__mobile-menu {
+    @include flex-row;
+    @include breakpoint-min-size($tablet) {
+      display: none;
+    }
+  }
+
+  &__logo-img {
+    width: 70%;
+  }
+}
+
+.mobile-menu {
+  width: 2rem;
+}
+
+.mobile-nav {
+  width: 100%;
+  height: fit-content;
+  background-color: #f5f0ec;
+  margin-bottom: 2rem;
+  display: block;
+
+  @include breakpoint-min-size($desktop) {
+    display: none;
+  }
+
+  &__box {
+    @include flex-column;
+  }
+
+  &__link {
+    padding: 1rem;
+    background-color: #f5f0ec;
+    text-decoration: none;
+    font-family: "Fraunces 9pt";
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $blue;
+    &:hover {
+      background-color: $blue;
+      color: white;
+    }
+  }
+}
