@@ -27,7 +27,7 @@ function Home() {
             <ProjectBlock
               img={boxpalslogo}
               title="Helping individuals save money through group order management"
-              desc="Development @ Brainstaiton"
+              desc="Development @ BrainStation"
               bgcolor="#004921"
             ></ProjectBlock>
           </Link>
