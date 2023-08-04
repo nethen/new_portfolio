@@ -3,7 +3,7 @@
 @import "../../styles/partials/_Variables";
 
 .projects-box {
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 1.5rem;
 
   @include breakpoint-min-size($tablet) {
     @include flex-row;

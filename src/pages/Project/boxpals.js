@@ -9,7 +9,6 @@ import boxpalslogin from "../../assets/boxpals_login.png";
 import boxpalshome from "../../assets/boxpals_home.png";
 import boxpalsorder from "../../assets/boxpals_order.png";
 import boxpalsadditem from "../../assets/boxpals_additem.png";
-
 function Boxpals() {
   return (
     <>
@@ -162,9 +161,10 @@ function Boxpals() {
             </div>
           </div>
           <div className="content__group-main">
-            <p className="content__body caption"></p>
-            However, group orders between friends commonly results in
-            spreadsheet management or disorganized instant messages.
+            <p className="content__body caption">
+              However, group orders between friends commonly results in
+              spreadsheet management or disorganized instant messages.
+            </p>
           </div>
           <div className="content__group-main">
             <div className="content__body">
@@ -188,7 +188,7 @@ function Boxpals() {
             </div>
           </div>
           <div className="content__group-main">
-            <p classNmae="content__body caption">
+            <p className="content__body caption">
               Group orders in this context are advertised and managed
               exclusively through social media (most commonly Instagram) and
               spreadsheets.
@@ -245,33 +245,34 @@ function Boxpals() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-            <p className="content__img-caption">
+            <p className="content__body" id="video-caption">
               Recorded demo of developed version of Boxpals, presented at
               BrainStation's demo day.
             </p>
           </div>
-
-          <div className="content__group-main">
-            <p className="content__story-heading">
-              Boxpals is a group order management platform that allows friends
-              and people within the same locale to place online orders together
-              without the hassle of extra tools.
-            </p>
-            <p className="content__body">
-              By ordering together, people are able to reduce their carbon
-              footprint by placing bulk shipments instead of several smaller
-              ones, and reach thresholds for additional monetary savings which
-              would be much harder to do individually.
-            </p>
-            <p className="content__body">
-              A key factor that shaped this project was technical constraints.
-              Due to the nature of the course, there was much larger emphasis on
-              meeting development requirements compared to design outcomes. As
-              the sole designer and developer, balancing both design and
-              development on this project outside of my full time role and my
-              coursework majorily shaped the outcome that I was able to produce
-              within the time constraints.
-            </p>
+          <div className="solution-box">
+            <div className="content__group-main">
+              <p className="content__story-heading">
+                Boxpals is a group order management platform that allows friends
+                and people within the same locale to place online orders
+                together without the hassle of extra tools.
+              </p>
+              <p className="content__body">
+                By ordering together, people are able to reduce their carbon
+                footprint by placing bulk shipments instead of several smaller
+                ones, and reach thresholds for additional monetary savings which
+                would be much harder to do individually.
+              </p>
+              <p className="content__body">
+                A key factor that shaped this project was technical constraints.
+                Due to the nature of the course, there was much larger emphasis
+                on meeting development requirements compared to design outcomes.
+                As the sole designer and developer, balancing both design and
+                development on this project outside of my full time role and my
+                coursework majorily shaped the outcome that I was able to
+                produce within the time constraints.
+              </p>
+            </div>
           </div>
 
           <p className="divider">Design Highlights</p>
@@ -352,45 +353,48 @@ function Boxpals() {
           </div>
 
           <p className="divider">Validation</p>
+          <div className="solution-box">
+            <div className="content__group">
+              <div className="pull-quote">
+                <p className="pull-quote__body">
+                  ”Overall you did an amazing job with your capstone! Boxpals is
+                  a fun and useful application that would benefit any group
+                  looking for a way to shop together […] You should be proud of
+                  your hard work an and diligent work ethic that helped you
+                  create such a fun project. I can’t wait to see the final
+                  version implemented in my own life!”
+                </p>
 
-          <div className="content__group">
-            <div className="pull-quote">
-              <p className="pull-quote__body">
-                ”Overall you did an amazing job with your capstone! Boxpals is a
-                fun and useful application that would benefit any group looking
-                for a way to shop together […] You should be proud of your hard
-                work an and diligent work ethic that helped you create such a
-                fun project. I can’t wait to see the final version implemented
-                in my own life!”
-              </p>
-
-              <p className="content__body">
-                — Senior Developer & member of BrainStation teaching team.
-              </p>
+                <p className="content__body">
+                  — Senior Developer & member of BrainStation teaching team.
+                </p>
+              </div>
             </div>
           </div>
-
           <p className="divider">Reflection</p>
-
-          <div className="content__group-main">
-            <p className="content__story-heading">
-              A successful illustration of learning and applying new skills, as
-              well as understanding the tradeoffs required to meet deadlines.
-            </p>
-            <p className="content__body">
-              As a designer by trade, I’m proud of that I was able to build this
-              proof of concept within the time constraints, using both my design
-              background and my knew learnings in full stack development. There
-              are so many things that I would go back and add to this project if
-              I had the time. Some of the main ideas include, a group order
-              manager view or dashboard and a more technically advanced method
-              of inputting items in order to reduce cognitive overhead and
-              increase usability. There are also a number of smaller additions
-              that I believe would benefit people, such as account statuses to
-              know what stage people are at in the group order process, a better
-              integrated notifications, and an integrated method to complete
-              payments whether through something like Stripe or other means.
-            </p>
+          <div className="solution-box">
+            <div className="content__group-main">
+              <p className="content__story-heading">
+                A successful illustration of learning and applying new skills,
+                as well as understanding the tradeoffs required to meet
+                deadlines.
+              </p>
+              <p className="content__body">
+                As a designer by trade, I’m proud of that I was able to build
+                this proof of concept within the time constraints, using both my
+                design background and my knew learnings in full stack
+                development. There are so many things that I would go back and
+                add to this project if I had the time. Some of the main ideas
+                include, a group order manager view or dashboard and a more
+                technically advanced method of inputting items in order to
+                reduce cognitive overhead and increase usability. There are also
+                a number of smaller additions that I believe would benefit
+                people, such as account statuses to know what stage people are
+                at in the group order process, a better integrated
+                notifications, and an integrated method to complete payments
+                whether through something like Stripe or other means.
+              </p>
+            </div>
           </div>
           <p className="divider">Appendix</p>
 

@@ -12,7 +12,7 @@ iframe {
 }
 
 .content {
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 1.5rem;
   @include breakpoint-min-size($tablet) {
     @include flex-row;
     justify-content: center;
@@ -129,6 +129,7 @@ iframe {
 
   &__examples {
     @include flex-column;
+    padding-top: 1.5rem;
 
     @include breakpoint-min-size($desktop) {
       @include flex-row;
@@ -183,7 +184,6 @@ iframe {
       @include m-body;
       @include removeMargin;
       width: 100%;
-      color: #616161;
       padding-bottom: 0.5rem;
     }
   }
@@ -300,4 +300,10 @@ iframe {
 
 .solution-box {
   padding-bottom: 4rem;
+}
+
+#video-caption {
+  padding-top: 0.5rem;
+  width: 70%;
+  text-align: center;
 }
