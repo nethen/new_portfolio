@@ -108,7 +108,35 @@ function Guusto() {
             </div>
           </div>
 
-          <div className="content__group">
+          <div className="divider">Conclusion</div>
+          <div className="content__group-main">
+            <p className="content__story-heading">
+              A significant portion of my work is under a NDA (mainly work that
+              has not been published).
+            </p>
+
+            <p className="content__body">
+              As I work on developing the best showcase of my work that I can,
+              do not hesitate to reach out via
+              <a
+                href="mailto:swolfsmichelle8@gmail.com"
+                className="content__inline-link"
+              >
+                email
+              </a>
+              or on
+              <a
+                href="https://www.linkedin.com/in/michelleswolfs/"
+                className="content__inline-link"
+                target="_blank"
+              >
+                Linkedin
+              </a>
+              with any questions regarding my work.
+            </p>
+          </div>
+
+          {/* <div className="content__group">
             <p className="content__section-heading">Featured Projects</p>
 
             <Link to="" className="project-link__tag">
@@ -146,7 +174,7 @@ function Guusto() {
                 Linkedin.
               </a>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
 

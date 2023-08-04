@@ -63,13 +63,14 @@ function about() {
       <section className="after-hours">
         <div className="after-hours__container">
           <div className="after-hours__titles">
-            <p className="after-hours__header">After Hours</p>
-            <p className="after-hours__subheader">you can find me...</p>
+            <p className="after-hours__header">
+              After hours you can find me...
+            </p>
           </div>
           <div className="after-hours__grid">
             <Activity
-              title="Improving my hand-eye coordination."
-              desc="You can catch me trying my best at League of Legends, surviving the night in Don’t Starve Together, or putting the finishing touches on my Animal Crossing island."
+              title="Walking slower then the average person."
+              desc="When outside, I’m often walking my senior dog Benji around a soccer field, or not walking fast enough to keep up with friends."
             ></Activity>
             <Activity
               title="Sticking my nose in a book."
@@ -77,12 +78,12 @@ function about() {
             ></Activity>
 
             <Activity
-              title="Staying connected through online communities."
-              desc="Whether it be learning from people at Vancouver Design Check-in, or moderating the community personal development community for Lavendaire, I’m always trying to frequent spaces that inspire me."
+              title="Participating in online communities."
+              desc="Whether it be learning from people at Vancouver Design Check-in, or moderating the personal development community for Lavendaire, I’m always trying to frequent spaces that inspire me."
             ></Activity>
             <Activity
-              title="Walking slower then the average person."
-              desc="When outside, I’m often walking my senior dog Benji around a soccer field, or not walking fast enough to keep up with friends."
+              title="Improving my hand-eye coordination."
+              desc="You can catch me trying my best at League of Legends, surviving the night in Don’t Starve Together, or putting the finishing touches on my Animal Crossing island."
             ></Activity>
           </div>
         </div>

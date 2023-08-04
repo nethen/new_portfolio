@@ -161,9 +161,10 @@ function Boxpals() {
             </div>
           </div>
           <div className="content__group-main">
-            <p className="content__body caption"></p>
-            However, group orders between friends commonly results in
-            spreadsheet management or disorganized instant messages.
+            <p className="content__body caption">
+              However, group orders between friends commonly results in
+              spreadsheet management or disorganized instant messages.
+            </p>
           </div>
           <div className="content__group-main">
             <div className="content__body">
@@ -187,7 +188,7 @@ function Boxpals() {
             </div>
           </div>
           <div className="content__group-main">
-            <p classNmae="content__body caption">
+            <p className="content__body caption">
               Group orders in this context are advertised and managed
               exclusively through social media (most commonly Instagram) and
               spreadsheets.
