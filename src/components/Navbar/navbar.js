@@ -40,7 +40,7 @@ function Navbar() {
         <div className="nav__container">
           <div className="nav__left-container">
             <div className="nav__logo-container">
-              <NavLink to="/">
+              <NavLink reloadDocument to="/">
                 <img className="nav__logo-img" src={logomark} />
               </NavLink>
             </div>
@@ -48,10 +48,10 @@ function Navbar() {
 
           <div className="nav__right-container">
             <div className="nav__links">
-              <NavLink to="/" className="nav__links-item">
+              <NavLink reloadDocument to="/" className="nav__links-item">
                 Work
               </NavLink>
-              <NavLink to="/about" className="nav__links-item">
+              <NavLink reloadDocument to="/about" className="nav__links-item">
                 About
               </NavLink>
               <NavLink
@@ -72,10 +72,10 @@ function Navbar() {
       {visible && (
         <div className="mobile-nav">
           <div className="mobile-nav__box">
-            <NavLink className="mobile-nav__link" to="/">
+            <NavLink reloadDocument className="mobile-nav__link" to="/">
               Work
             </NavLink>
-            <NavLink className="mobile-nav__link" to="/about">
+            <NavLink reloadDocument className="mobile-nav__link" to="/about">
               About
             </NavLink>
             <NavLink
