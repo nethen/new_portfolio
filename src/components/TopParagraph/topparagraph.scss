@@ -75,6 +75,7 @@
 
   &__desc {
     @include removeMargin;
+    @include m-body;
   }
 
   &__item {
