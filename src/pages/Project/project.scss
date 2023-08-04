@@ -184,7 +184,6 @@ iframe {
       @include m-body;
       @include removeMargin;
       width: 100%;
-      color: #616161;
       padding-bottom: 0.5rem;
     }
   }
@@ -301,4 +300,10 @@ iframe {
 
 .solution-box {
   padding-bottom: 4rem;
+}
+
+#video-caption {
+  padding-top: 0.5rem;
+  width: 70%;
+  text-align: center;
 }
