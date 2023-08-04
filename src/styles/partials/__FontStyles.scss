@@ -1,23 +1,29 @@
 @font-face {
   font-family: "Uncut Sans", sans-serif;
+  font-weight: 500;
+  src: url("../../fonts/Fraunces9ptSuperSoft-Regular.otf");
+}
+
+@font-face {
+  font-family: "Uncut Sans", sans-serif;
   font-weight: 600;
-  src: url("../../assets/uncut_sans/Uncut-Sans-Semibold.otf");
+  src: url("../../fonts/Uncut-Sans-Semibold.otf");
 }
 
 @font-face {
   font-family: "Uncut Sans", sans-serif;
   font-weight: 700;
-  src: url("../../assets/uncut_sans/Uncut-Sans-Bold.otf");
+  src: url("../../fonts/Uncut-Sans-Bold.otf");
 }
 
 @font-face {
   font-family: "Fraunces 9pt", serif;
   font-weight: 900;
-  src: url("../../assets/fraunces_9pt/Fraunces9ptSuperSoft-Black.otf");
+  src: url("../../fonts/Fraunces9ptSuperSoft-Black.otf");
 }
 
 @font-face {
   font-family: "Fraunces 9pt", serif;
   font-weight: 600;
-  src: url("../../assets/fraunces_9pt/Fraunces9ptSuperSoft-SemiBold.otf");
+  src: url("../../fonts/Fraunces9ptSuperSoft-SemiBold.otf");
 }
