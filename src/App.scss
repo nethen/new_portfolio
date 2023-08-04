@@ -3,3 +3,33 @@
 body {
   background-color: $white;
 }
+
+@font-face {
+  font-family: "Uncut Sans", sans-serif;
+  font-weight: 500;
+  src: url("./fonts/Uncut-Sans-Regular.otf");
+}
+
+@font-face {
+  font-family: "Uncut Sans", sans-serif;
+  font-weight: 600;
+  src: url("./fonts/Uncut-Sans-Semibold.otf");
+}
+
+@font-face {
+  font-family: "Uncut Sans", sans-serif;
+  font-weight: 700;
+  src: url("./fonts/Uncut-Sans-Bold.otf");
+}
+
+@font-face {
+  font-family: "Fraunces 9pt", serif;
+  font-weight: 900;
+  src: url("./fonts/Fraunces9ptSuperSoft-Black.otf");
+}
+
+@font-face {
+  font-family: "Fraunces 9pt", serif;
+  font-weight: 600;
+  src: url("./fonts/Fraunces9ptSuperSoft-Regular.otf");
+}
