@@ -9,7 +9,6 @@ import boxpalslogin from "../../assets/boxpals_login.png";
 import boxpalshome from "../../assets/boxpals_home.png";
 import boxpalsorder from "../../assets/boxpals_order.png";
 import boxpalsadditem from "../../assets/boxpals_additem.png";
-
 function Boxpals() {
   return (
     <>
