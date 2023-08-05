@@ -1,5 +1,4 @@
 import "./cta.scss";
-import singleSparkle from "../../assets/singlesparkle.svg";
 
 function CTA() {
   return (

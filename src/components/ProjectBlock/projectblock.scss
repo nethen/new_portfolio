@@ -26,7 +26,6 @@
     padding-bottom: 2rem;
 
     @include breakpoint-min-size($desktop) {
-      @include flex-row;
       justify-content: space-between;
       max-width: 100%;
       align-items: flex-start;
@@ -43,9 +42,12 @@
   &__title {
     @include m-bold-heading;
     @include removeMargin;
+    font-size: 1.4rem;
+
     @include breakpoint-min-size($desktop) {
-      font-size: 1.3rem;
-      max-width: 50%;
+      font-size: 2rem;
+      width: 85%;
+      padding-bottom: 0.5rem;
     }
   }
 
@@ -53,6 +55,7 @@
     @include m-body;
     padding-top: 0.4rem;
     @include removeMargin;
+    font-size: 1rem;
 
     @include breakpoint-min-size($desktop) {
       padding-top: 0.4rem;

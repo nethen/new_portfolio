@@ -16,6 +16,11 @@
     height: 3.5rem;
     margin-left: 1rem;
 
+    &:hover {
+      filter: invert(38%) sepia(70%) saturate(680%) hue-rotate(186deg)
+        brightness(92%) contrast(91%);
+    }
+
     &-div {
       width: 100%;
       padding-top: 1rem;

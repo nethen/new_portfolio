@@ -40,7 +40,8 @@
     }
 
     &-item {
-      @include d-body;
+      @include d-subheading-serif;
+      font-size: 1rem;
       font-weight: 600;
       color: $blue;
     }

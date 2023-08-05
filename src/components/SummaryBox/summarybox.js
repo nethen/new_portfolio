@@ -19,7 +19,7 @@ function SummaryBox() {
             <SummaryItem
               icon={pinIcon}
               title="Most Recently"
-              desc="Executing on all things design and website implementation over at Guusto ↗."
+              desc="Executing on all things design and website implementation over at Guusto."
             />
             <SummaryItem
               icon={pencilIcon}
