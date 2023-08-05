@@ -1,6 +1,5 @@
 import "./project.scss";
 import ProjectHeader from "../../components/ProjectHeader/projectheader";
-import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import guustogroup from "../../assets/guusto_group.png";
 import guustomobilebefore from "../../assets/guusto_mobile-before.png";
@@ -18,8 +17,8 @@ function Guusto() {
           <div className="content__group">
             <p className="content__summary">
               Guusto is a B2B company that provides employee recognition and
-              customer rewards solutions through both monetary (sending gifts)
-              and non-monetary (shoutouts) recognition.
+              customer rewards solutions through both monetary and non-monetary
+              recognition.
             </p>
           </div>
 

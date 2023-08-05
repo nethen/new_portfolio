@@ -11,15 +11,23 @@ function Footer() {
           </div>
 
           <div className="footer__right">
-            <a href="" className="footer__link">
+            <a href="mailto:swolfsmichelle8@gmail.com" className="footer__link">
               Email ↗
             </a>
             <img className="footer__sparkle" src={singlesparkle} />
-            <a href="" className="footer__link">
+            <a
+              href="https://www.linkedin.com/in/michelleswolfs/"
+              target="_blank"
+              className="footer__link"
+            >
               Linkedin ↗
             </a>
             <img className="footer__sparkle" src={singlesparkle} />
-            <a href="" className="footer__link">
+            <a
+              href="https://github.com/amemichelle/new_portfolio"
+              target="_blank"
+              className="footer__link"
+            >
               Github ↗
             </a>
           </div>

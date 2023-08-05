@@ -19,7 +19,7 @@ function Home() {
             <ProjectBlock
               img={boxpalslogo}
               title="Helping individuals save money through group order management"
-              desc="Development @ BrainStation"
+              desc="Product design, web development — Capstone project @ BrainStation"
               bgcolor="#004921"
             ></ProjectBlock>
           </Link>
@@ -27,8 +27,8 @@ function Home() {
           <Link className="projects-box__link" to="/guusto">
             <ProjectBlock
               img={guustologo}
-              title="Reimagining what employee recognition looks like"
-              desc="Design @ Guusto"
+              title="Reimagining what employee recognition looks like in today's workforce"
+              desc="Product design, branding & identity, web development — Employment @ Guusto"
               bgcolor="#22315c"
             ></ProjectBlock>
           </Link>
