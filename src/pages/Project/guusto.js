@@ -34,9 +34,8 @@ function Guusto() {
           </div>
 
           <div className="content__examples">
-            <div className="content__bg">
+            <div className="content__bg alt">
               <p className="content__body">Before</p>
-
               <ModalImage
                 small={guustomobilebefore}
                 large={guustomobilebefore}
@@ -45,7 +44,7 @@ function Guusto() {
               />
             </div>
 
-            <div className="content__bg">
+            <div className="content__bg alt">
               <p className="content__body">After</p>
 
               <ModalImage
@@ -69,7 +68,7 @@ function Guusto() {
           </div>
 
           <div className="content__examples">
-            <div className="content__bg">
+            <div className="content__bg alt">
               <p className="content__body">Current</p>
 
               <ModalImage
@@ -80,7 +79,7 @@ function Guusto() {
               />
             </div>
 
-            <div className="content__bg">
+            <div className="content__bg alt">
               <p className="content__body">Proposed</p>
 
               <ModalImage
@@ -139,7 +138,7 @@ function Guusto() {
 
             <p className="content__body">
               As I work on developing the best showcase of my work that I can,
-              do not hesitate to reach out via
+              feel free to reach out via
               <a
                 href="mailto:swolfsmichelle8@gmail.com"
                 className="content__inline-link"
@@ -155,7 +154,7 @@ function Guusto() {
               >
                 Linkedin
               </a>
-              with any questions regarding my work.
+              with any questions about my work.
             </p>
           </div>
         </div>
