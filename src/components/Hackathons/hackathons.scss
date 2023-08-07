@@ -9,7 +9,7 @@
 
   &__header {
     @include removeMargin;
-    @include m-bold-heading;
+    @include m-body-serif;
   }
 }
 

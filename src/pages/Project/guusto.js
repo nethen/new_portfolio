@@ -121,6 +121,7 @@ function Guusto() {
                 <a
                   href="https://guusto.com/"
                   target="_blank"
+                  rel="noreferrer"
                   className="content__inline-link"
                 >
                   guusto.com
@@ -150,52 +151,13 @@ function Guusto() {
                 href="https://www.linkedin.com/in/michelleswolfs/"
                 className="content__inline-link"
                 target="_blank"
+                rel="noreferrer"
               >
                 Linkedin
               </a>
               with any questions regarding my work.
             </p>
           </div>
-
-          {/* <div className="content__group">
-            <p className="content__section-heading">Featured Projects</p>
-
-            <Link to="" className="project-link__tag">
-              <div className="project-link">
-                <div className="coming-soon">
-                  <p className="coming-soon__tag">coming soon</p>
-                </div>
-                <p className="content__big-link">Mobile application refresh</p>
-              </div>
-            </Link>
-            <Link to="" className="project-link__tag">
-              <div className="project-link">
-                <div className="coming-soon">
-                  <p className="coming-soon__tag">coming soon</p>
-                </div>
-                <p className="content__big-link">Brand update</p>
-              </div>
-            </Link>
-
-            <p className="content__body">
-              If you want to learn more about my time at Guusto, feel free to
-              reach out via
-              <a
-                href="mailto:swolfsmichelle8@gmail.com"
-                className="content__inline-link"
-              >
-                email
-              </a>
-              or on
-              <a
-                href="https://www.linkedin.com/in/michelleswolfs/"
-                className="content__inline-link"
-                target="_blank"
-              >
-                Linkedin.
-              </a>
-            </p>
-          </div> */}
         </div>
       </div>
 

@@ -83,6 +83,7 @@ function Boxpals() {
                 className="content__inline-link"
                 href="https://www.retaildive.com/news/study-one-third-of-discretionary-income-is-now-spent-online/540920/"
                 target="_blank"
+                rel="noreferrer"
               >
                 “one third of consumer’s monthly discretionary income [now
                 being] spent online,”
@@ -117,6 +118,7 @@ function Boxpals() {
                 className="content__inline-link"
                 href="https://earth.org/online-shopping-and-its-environmental-impact/#:~:text=The%20transport%20of%20goods%20across,of%20the%20total%20GHG%20emissions."
                 target="_blank"
+                rel="noreferrer"
               >
                 — Martina Igini, Managing Editor @ earth.org
               </a>

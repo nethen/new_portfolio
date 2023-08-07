@@ -35,7 +35,7 @@ function about() {
               <p className="work__header">Education</p>
               <ul className="work__list">
                 <li className="work__list-item">
-                  Design @ Simon Fraser University{" "}
+                  Design @ Simon Fraser University
                 </li>
                 <li className="work__list-item">Development @ Brainstation</li>
               </ul>

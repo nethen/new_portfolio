@@ -28,16 +28,17 @@
   }
 
   &__copyright {
-    @include m-bold-heading;
-    font-size: 1.2rem;
+    @include m-body-serif;
     padding-bottom: 0.6rem;
     margin-block-end: 0;
   }
 
   &__link {
     @include m-text-link;
-    font-size: 1rem;
-    font-weight: 600;
+
+    @include breakpoint-min-size($desktop) {
+      font-size: 1.1rem;
+    }
 
     &:hover {
       background-color: #f5f0ec;

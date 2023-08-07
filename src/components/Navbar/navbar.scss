@@ -35,15 +35,12 @@
 
     @include breakpoint-min-size($tablet) {
       gap: 1rem;
-      @include m-text-link;
       @include flex-row;
     }
 
     &-item {
-      @include d-subheading-serif;
+      @include m-nav-links;
       font-size: 1rem;
-      font-weight: 600;
-      color: $blue;
     }
   }
 
@@ -79,13 +76,10 @@
   }
 
   &__link {
+    @include m-nav-links;
     padding: 1rem;
     background-color: #f5f0ec;
-    text-decoration: none;
-    font-family: "Fraunces";
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: $blue;
+
     &:hover {
       background-color: $blue;
       color: white;
