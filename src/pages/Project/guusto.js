@@ -1,5 +1,6 @@
 import "./project.scss";
 import ProjectHeader from "../../components/ProjectHeader/projectheader";
+import ModalImage from "react-modal-image";
 import Footer from "../../components/Footer/Footer";
 import guustogroup from "../../assets/guusto_group.png";
 import guustomobilebefore from "../../assets/guusto_mobile-before.png";
@@ -35,13 +36,24 @@ function Guusto() {
           <div className="content__examples">
             <div className="content__bg">
               <p className="content__body">Before</p>
-              <img className="content__images-tall" src={guustomobilebefore} />
+
+              <ModalImage
+                small={guustomobilebefore}
+                large={guustomobilebefore}
+                alt="Past version of Guusto mobile application"
+                className="project__img"
+              />
             </div>
 
             <div className="content__bg">
               <p className="content__body">After</p>
 
-              <img className="content__images-tall" src={guustomobileafter} />
+              <ModalImage
+                small={guustomobileafter}
+                large={guustomobileafter}
+                alt="Updated version of Guusto mobile application"
+                className="project__img"
+              />
             </div>
           </div>
           <div className="solution-box">
@@ -59,18 +71,23 @@ function Guusto() {
           <div className="content__examples">
             <div className="content__bg">
               <p className="content__body">Current</p>
-              <img
-                className="content__images-tall"
-                src={guustomarketingcurrent}
+
+              <ModalImage
+                small={guustomarketingcurrent}
+                large={guustomarketingcurrent}
+                alt="Proposed Guusto marketing website"
+                className="project__img"
               />
             </div>
 
             <div className="content__bg">
               <p className="content__body">Proposed</p>
 
-              <img
-                className="content__images-tall"
-                src={guustomarketingproposed}
+              <ModalImage
+                small={guustomarketingproposed}
+                large={guustomarketingproposed}
+                alt="Current Guusto marketing website"
+                className="project__img"
               />
             </div>
           </div>
@@ -87,7 +104,12 @@ function Guusto() {
           </div>
           <div className="content__group">
             <div className="content__bg-max">
-              <img src={guustositeassets} className="project__img" />
+              <ModalImage
+                small={guustositeassets}
+                large={guustositeassets}
+                alt="Current Guusto marketing website"
+                className="project__img"
+              />
             </div>
 
             <div className="content__group-main">
@@ -99,6 +121,7 @@ function Guusto() {
                 <a
                   href="https://guusto.com/"
                   target="_blank"
+                  rel="noreferrer"
                   className="content__inline-link"
                 >
                   guusto.com
@@ -128,52 +151,13 @@ function Guusto() {
                 href="https://www.linkedin.com/in/michelleswolfs/"
                 className="content__inline-link"
                 target="_blank"
+                rel="noreferrer"
               >
                 Linkedin
               </a>
               with any questions regarding my work.
             </p>
           </div>
-
-          {/* <div className="content__group">
-            <p className="content__section-heading">Featured Projects</p>
-
-            <Link to="" className="project-link__tag">
-              <div className="project-link">
-                <div className="coming-soon">
-                  <p className="coming-soon__tag">coming soon</p>
-                </div>
-                <p className="content__big-link">Mobile application refresh</p>
-              </div>
-            </Link>
-            <Link to="" className="project-link__tag">
-              <div className="project-link">
-                <div className="coming-soon">
-                  <p className="coming-soon__tag">coming soon</p>
-                </div>
-                <p className="content__big-link">Brand update</p>
-              </div>
-            </Link>
-
-            <p className="content__body">
-              If you want to learn more about my time at Guusto, feel free to
-              reach out via
-              <a
-                href="mailto:swolfsmichelle8@gmail.com"
-                className="content__inline-link"
-              >
-                email
-              </a>
-              or on
-              <a
-                href="https://www.linkedin.com/in/michelleswolfs/"
-                className="content__inline-link"
-                target="_blank"
-              >
-                Linkedin.
-              </a>
-            </p>
-          </div> */}
         </div>
       </div>
 

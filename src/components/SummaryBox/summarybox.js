@@ -14,12 +14,12 @@ function SummaryBox() {
             <SummaryItem
               icon={bookIcon}
               title="Previously"
-              desc="Leading volunteer teams through marketing + content strategy for online events. "
+              desc="Leading volunteer teams through marketing + strategy for online events. "
             />
             <SummaryItem
               icon={pinIcon}
               title="Most Recently"
-              desc="Executing on all things design and website implementation over at Guusto."
+              desc="Executing on all things design and implementation over at Guusto."
             />
             <SummaryItem
               icon={pencilIcon}

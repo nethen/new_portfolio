@@ -32,10 +32,32 @@
 
 // FONT STYLES - MOBILE
 
+@mixin m-nav-links {
+  font-family: "Fraunces";
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: $blue;
+  text-decoration: none;
+}
+
 @mixin m-h1-style {
   font-family: "Fraunces", sans-serif;
   font-size: 1.7rem;
   font-weight: 900;
+  color: $black;
+}
+
+@mixin m-serif-lg {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: $black;
+}
+
+@mixin m-bold-story-heading {
+  font-family: "Fraunces";
+  font-weight: 600;
+  font-size: 2rem;
   color: $black;
 }
 
@@ -49,75 +71,52 @@
 @mixin m-bold-heading {
   font-family: "Fraunces";
   font-weight: 600;
+  font-size: 1.6rem;
+  color: $black;
+}
+
+@mixin m-captions {
+  font-family: "Uncut Sans", sans-serif;
   font-size: 1.1rem;
-  color: $black;
-}
-
-@mixin m-bold-story-heading {
-  font-family: "Fraunces";
   font-weight: 600;
-  font-size: 2rem;
-  color: $black;
-}
-
-@mixin m-bold-heading-xl {
-  font-family: "Fraunces";
-  font-weight: 600;
-  font-size: 2rem;
-  color: $black;
+  color: #5e5e5e;
 }
 
 @mixin m-body {
   font-family: "Uncut Sans";
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: $black;
 }
 
 @mixin m-body-serif {
   font-family: "Fraunces";
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: $black;
 }
 
 @mixin m-text-link {
   font-family: "Uncut Sans";
-  font-weight: 500;
-  font-size: 0.9rem;
+  font-weight: 600;
+  font-size: 1rem;
   color: $blue;
 }
 
-@mixin removeMargin {
-  margin-block-end: 0;
-  margin-block-start: 0;
-}
-
-// FONT STYLES - DESKTOP
-
-@mixin d-heading-xl {
-  font-family: "Fraunces", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: $black;
-}
-
-@mixin d-subheading-serif {
-  font-family: "Fraunces";
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: $black;
-}
-
-@mixin d-body {
-  font-family: "Uncut Sans";
-  font-weight: 500;
-  font-size: 1.1rem;
-  color: $black;
+@mixin m-divider {
+  font-family: "Uncut Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: $blue;
 }
 
 // COMMON STUFF
 @mixin centered {
   justify-content: center;
   align-items: center;
+}
+
+@mixin removeMargin {
+  margin-block-end: 0;
+  margin-block-start: 0;
 }

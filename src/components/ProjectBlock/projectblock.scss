@@ -40,9 +40,8 @@
   }
 
   &__title {
-    @include m-bold-heading;
+    @include m-serif-lg;
     @include removeMargin;
-    font-size: 1.4rem;
 
     @include breakpoint-min-size($desktop) {
       font-size: 2rem;
@@ -52,14 +51,12 @@
   }
 
   &__desc {
+    @include removeMargin;
     @include m-body;
     padding-top: 0.4rem;
-    @include removeMargin;
-    font-size: 1rem;
 
     @include breakpoint-min-size($desktop) {
-      padding-top: 0.4rem;
-      font-size: 1.1;
+      font-size: 1.1rem;
     }
   }
 }

@@ -16,6 +16,7 @@
 
   &__name {
     @include removeMargin;
+    @include m-body;
     padding-bottom: 0.25rem;
   }
 
@@ -24,6 +25,8 @@
   }
 
   &__date {
+    @include m-body;
+    @include removeMargin;
     width: 10%;
   }
 }

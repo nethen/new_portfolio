@@ -1,7 +1,9 @@
 import "./project.scss";
 import ProjectHeader from "../../components/ProjectHeader/projectheader";
+import ModalImage from "react-modal-image";
 import spreadsheetExample from "../../assets/spreadsheet.jpg";
 import messengerExample from "../../assets/messenger.jpg";
+import messengerSmall from "../../assets/messenger-small.jpg";
 import igPost from "../../assets/igpost.jpg";
 import igMessage from "../../assets/igmessage.jpg";
 import boxpalsgroup from "../../assets/boxpals_group.png";
@@ -9,6 +11,7 @@ import boxpalslogin from "../../assets/boxpals_login.png";
 import boxpalshome from "../../assets/boxpals_home.png";
 import boxpalsorder from "../../assets/boxpals_order.png";
 import boxpalsadditem from "../../assets/boxpals_additem.png";
+
 function Boxpals() {
   return (
     <>
@@ -80,6 +83,7 @@ function Boxpals() {
                 className="content__inline-link"
                 href="https://www.retaildive.com/news/study-one-third-of-discretionary-income-is-now-spent-online/540920/"
                 target="_blank"
+                rel="noreferrer"
               >
                 “one third of consumer’s monthly discretionary income [now
                 being] spent online,”
@@ -114,6 +118,7 @@ function Boxpals() {
                 className="content__inline-link"
                 href="https://earth.org/online-shopping-and-its-environmental-impact/#:~:text=The%20transport%20of%20goods%20across,of%20the%20total%20GHG%20emissions."
                 target="_blank"
+                rel="noreferrer"
               >
                 — Martina Igini, Managing Editor @ earth.org
               </a>
@@ -153,11 +158,22 @@ function Boxpals() {
 
           <div className="content__examples">
             <div className="content__bg">
-              <img className="content__images" src={spreadsheetExample} />
+              <ModalImage
+                small={spreadsheetExample}
+                large={spreadsheetExample}
+                alt="Group order organized through spreadsheet"
+                className="content__images"
+              />
+              ;
             </div>
 
             <div className="content__bg">
-              <img className="content__images-tall" src={messengerExample} />
+              <ModalImage
+                small={messengerSmall}
+                large={messengerExample}
+                alt="Group order organized through instant messages"
+                className="content__images-tall"
+              />
             </div>
           </div>
           <div className="content__group-main">
@@ -179,11 +195,22 @@ function Boxpals() {
           </div>
           <div className="content__examples">
             <div className="content__bg">
-              <img className="content__images" src={igPost} />
+              <ModalImage
+                small={igPost}
+                large={igPost}
+                alt="Example of group order advertisement"
+                className="content__images"
+              />
             </div>
 
             <div className="content__bg">
-              <img className="content__images" src={igMessage} />
+              <ModalImage
+                small={igMessage}
+                large={igMessage}
+                alt="Example of group order management through social media"
+                className="content__images"
+              />
+
               <p className="content__body">*info blurred for privacy</p>
             </div>
           </div>
@@ -278,7 +305,12 @@ function Boxpals() {
           <p className="divider">Design Highlights</p>
 
           <div className="content__bg-max">
-            <img src={boxpalslogin} className="project__img" />
+            <ModalImage
+              small={boxpalslogin}
+              large={boxpalslogin}
+              alt="Login screen of Boxpals"
+              className="project__img"
+            />
           </div>
           <div className="solution-box">
             <div className="content__group-main">
@@ -295,7 +327,12 @@ function Boxpals() {
           </div>
 
           <div className="content__bg-max">
-            <img src={boxpalshome} className="project__img" />
+            <ModalImage
+              small={boxpalshome}
+              large={boxpalshome}
+              alt="Home screen of Boxpals"
+              className="project__img"
+            />
           </div>
           <div className="solution-box">
             <div className="content__group-main">
@@ -314,7 +351,12 @@ function Boxpals() {
           </div>
 
           <div className="content__bg-max">
-            <img src={boxpalsorder} className="project__img" />
+            <ModalImage
+              small={boxpalsorder}
+              large={boxpalsorder}
+              alt="Order screen of Boxpals"
+              className="project__img"
+            />
           </div>
 
           <div className="solution-box">
@@ -333,7 +375,12 @@ function Boxpals() {
           </div>
 
           <div className="content__bg-max">
-            <img src={boxpalsadditem} className="project__img" />
+            <ModalImage
+              small={boxpalsadditem}
+              large={boxpalsadditem}
+              alt="Add item screen of Boxpals"
+              className="project__img"
+            />
           </div>
           <div className="solution-box">
             <div className="content__group-main">
