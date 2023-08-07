@@ -52,7 +52,7 @@ iframe {
     background-color: $tan-background;
     @include flex-column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 4rem 1rem;
     border-radius: 24px;
     margin-bottom: 0.5rem;
@@ -271,7 +271,8 @@ iframe {
 
 div:has(> img.project__img) {
   @include flex-row;
-  @include centered;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 #long {
@@ -290,4 +291,8 @@ div:has(> img.project__img) {
   padding-top: 0.5rem;
   width: 70%;
   text-align: center;
+}
+
+.alt {
+  height: fit-content;
 }
