@@ -24,7 +24,7 @@ function Footer() {
             </a>
             <img className="footer__sparkle" src={singlesparkle} />
             <a
-              href="https://github.com/amemichelle/new_portfolio"
+              href="https://github.com/amemichelle"
               target="_blank"
               className="footer__link"
             >

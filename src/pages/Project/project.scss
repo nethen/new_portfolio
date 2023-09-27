@@ -254,7 +254,15 @@ iframe {
 }
 
 #context-bullets {
+  padding-top: 2rem;
+  justify-content: flex-start;
+
+  @include breakpoint-min-size($tablet) {
+    padding-top: 2rem;
+  }
   @include breakpoint-min-size($desktop) {
+    padding-top: 0rem;
+
     width: 25%;
   }
 }
