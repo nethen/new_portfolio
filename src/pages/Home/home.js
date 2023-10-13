@@ -7,6 +7,7 @@ import ProjectBlock from "../../components/ProjectBlock/projectblock";
 import Footer from "../../components/Footer/Footer";
 import guustologo from "../../assets/guusto.svg";
 import boxpalslogo from "../../assets/boxpals.svg";
+import cultivateLogo from "../../assets/cultivate_logo.svg";
 
 function Home() {
   return (
@@ -42,6 +43,15 @@ function Home() {
                 title="Reimagining what employee recognition looks like in today's workforce"
                 desc="Product design, branding & identity, web development — Employment @ Guusto"
                 bgcolor="#22315c"
+              ></ProjectBlock>
+            </Link>
+
+            <Link className="projects-box__link" to="/cultivate">
+              <ProjectBlock
+                img={cultivateLogo}
+                title="Connecting employers, employment agencies, and individuals with barriers to employment through micro-jobs"
+                desc="Service design, product design, branding & identity - Final Project @ Civic Innovation Change Lab"
+                bgcolor="#EBE8E5"
               ></ProjectBlock>
             </Link>
           </div>
