@@ -5,6 +5,9 @@ import interviews from "../../assets/cultivate-interviews.png";
 import ModalImage from "react-modal-image";
 import cultivateGroup from "../../assets/cultivate_group.png";
 import cultivateSignIn from "../../assets/cultivate_sign-up.png";
+import cultivateAddJob from "../../assets/cultivate_add-job.png";
+import cultivateScreen from "../../assets/cultivate_tv.png";
+import cultivateReview from "../../assets/cultivate_review.png";
 
 function Cultivate() {
   return (
@@ -217,6 +220,92 @@ function Cultivate() {
             <p className="divider">How it Works</p>
             <div className="content__bg-max">
               <img src={cultivateSignIn} className="project__img" />
+            </div>
+
+            <div className="content__group-main">
+              <div className="content__group">
+                <p className="content__story-heading">
+                  Getting on the platform is different for each group.
+                </p>
+
+                <ul>
+                  <li className="bullets__text-insights">
+                    <span className="bold">Employers</span> register their
+                    business through the Cultivate Inclusivity website.
+                  </li>
+                  <li className="bullets__text-insights">
+                    <span className="bold">Employment Agencies</span> partner
+                    with Cultivate Inclusivity by contacting the Cultivate
+                    Inclusivity team.
+                  </li>
+
+                  <li className="bullets__text-insights">
+                    <span className="bold">Community Members</span> are able to
+                    opt-in for registration if the employment agency they are
+                    with is an existing Cultivate Inclusivity partner.{" "}
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="content__bg-max">
+              <img src={cultivateAddJob} className="project__img" />
+            </div>
+
+            <div className="content__group-main">
+              <div className="content__group">
+                <p className="content__story-heading">
+                  Employers add jobs to the system via the online portal.
+                </p>
+
+                <p className="content__body">
+                  These jobs appear on screens set up inside of partnered
+                  employment agencies around the Downtown Eastside.
+                </p>
+              </div>
+            </div>
+
+            <div className="content__bg-max">
+              <img src={cultivateScreen} className="project__img" />
+            </div>
+
+            <div className="content__group-main">
+              <div className="content__group">
+                <p className="content__story-heading">
+                  Community members can speak with employment agencies to fill
+                  shifts displayed on screen.
+                </p>
+
+                <p className="content__body">
+                  Employment agencencies can inform employers that individuals
+                  will be coming to work for their posted shift.
+                </p>
+              </div>
+            </div>
+
+            <div className="content__bg-max">
+              <img src={cultivateReview} className="project__img" />
+            </div>
+
+            <div className="content__group-main">
+              <div className="content__group">
+                <p className="content__story-heading">
+                  After the shift has been completed by a community member,
+                  employers can review the shift.
+                </p>
+
+                <p className="content__body">
+                  Reviews will be shared with the appropriate employment agency
+                  for their records, and to share with the individual who
+                  completed the shift.
+                </p>
+
+                <p className="content__body">
+                  <span className="bold">Community members</span> can also
+                  review the employer at their next visit to the employment
+                  agency.
+                </p>
+              </div>
             </div>
 
             <p className="divider">Validation</p>
