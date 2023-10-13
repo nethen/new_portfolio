@@ -101,6 +101,11 @@ iframe {
     }
   }
 
+  &__hl {
+    @include m-body;
+    font-weight: 700;
+  }
+
   &__inline-link {
     @include m-text-link;
     padding-left: 0.2rem;
@@ -303,4 +308,19 @@ div:has(> img.project__img) {
 
 .alt {
   height: fit-content;
+}
+
+.people {
+  @include flex-column;
+  padding-bottom: 2rem;
+  @include breakpoint-min-size($tablet) {
+    @include flex-row;
+    justify-content: space-between;
+  }
+
+  &__group {
+    @include breakpoint-min-size($tablet) {
+      width: 30%;
+    }
+  }
 }

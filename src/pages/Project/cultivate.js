@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import ProjectHeader from "../../components/ProjectHeader/projectheader";
 import interviews from "../../assets/cultivate-interviews.png";
 import ModalImage from "react-modal-image";
+import cultivateGroup from "../../assets/cultivate_group.png";
+import cultivateSignIn from "../../assets/cultivate_sign-up.png";
 
 function Cultivate() {
   return (
@@ -18,6 +20,8 @@ function Cultivate() {
           hidden: { opacity: 0 },
         }}
       >
+        <ProjectHeader img={cultivateGroup} bgcolor="#8EAF6E" />
+
         <div className="content">
           <div className="content__box">
             <p className="content__summary">
@@ -74,14 +78,14 @@ function Cultivate() {
               </div>
             </div>
 
-            <p className="divider">Process</p>
-
-            <div className="content__group-main">
-              <div className="content__group">
-                <p className="content__story-heading">
+            <p className="divider">Problem Space</p>
+            <div className="content__group">
+              <div className="pull-quote">
+                <p className="pull-quote__body">
                   Did you know that 250+ agencies provide services to vulnerable
                   residents in the Downtown Eastside (DTES) each day?
                 </p>
+
                 <a
                   className="content__inline-link"
                   href="https://vancouversun.com/news/metro/downtown-eastside-260-agencies-housing-sites-crowd-downtown-eastside-with-video-and-map"
@@ -91,30 +95,22 @@ function Cultivate() {
                   — Vancouver Sun
                 </a>
               </div>
+            </div>
 
+            <div className="content__group-main">
               <div className="content__group">
                 <p className="content__body">
                   However, it is difficult to track the social and financial
                   investments being made in the community due to the lack of
                   coordination and collaboration. As investigating and
-                  understanding the countless amount of services offered in this
-                  community was impossible to do in the available time period,
-                  we narrowed this down to taking a deeper look into employment
-                  services in the DTES.
+                  understanding the countless amount of services offered was
+                  impossible to do in the available time period, we narrowed
+                  this down to taking a deeper look into employment services in
+                  the DTES.
                 </p>
               </div>
-            </div>
 
-            <p className="divider">Problem Space</p>
-            <div className="content__group-main">
               <div className="content__group">
-                <p className="content__story-heading">
-                  To further expand the resiliency of the Downtown Eastside, the
-                  community needs a supportive employment opportunity that
-                  addresses the needs of three key community groups: local
-                  businesses, agencies, and individuals.
-                </p>
-
                 <p className="content__body">
                   Even beginning to understand the complexity surrounding the
                   personal and societal effects that lead to an individual
@@ -136,44 +132,63 @@ function Cultivate() {
               />
             </div>
 
-            <p className="divider">Insights</p>
-            <div className="content__group-main">
+            <p className="divider">Target Audience & Insights</p>
+
+            <div className="content__group">
+              <p className="content__body">
+                Three key parties emerged as a result of our interivews and
+                secondary research:
+              </p>
+
+              <div className="people">
+                <div className="people__group">
+                  <p className="content__hl">1. Business Owners</p>
+                  <p className="content__body">
+                    Socially responsible business owners in the Downtown
+                    Eastside need an easy, accessible way to hire individuals
+                    with barriers to employment to solve their inconsistent
+                    labour needs.
+                  </p>
+                </div>
+                <div className="people__group">
+                  <p className="content__hl">2. Employment Agencies</p>
+                  <p className="content__body">
+                    Employment agencies need tailored resources to readily meet
+                    the needs of the Downtown Eastside’s community members.
+                  </p>
+                </div>
+                <div className="people__group">
+                  <p className="content__hl">3. Community Members</p>
+                  <p className="content__body">
+                    Individuals with barriers to employment need support through
+                    employment with purpose, regardless of what that purpose may
+                    be.
+                  </p>
+                </div>
+              </div>
+
               <div className="content__group">
-                <p className="content__body">
-                  From these interviews, we were able to gather 5 key insights
-                  which informed our solution.
+                <p className="content__story-heading">
+                  To further expand the resiliency of the Downtown Eastside, the
+                  community needs a supportive employment opportunity that
+                  addresses the needs of three key community groups: local
+                  businesses, agencies, and individuals.
                 </p>
-                <ol>
-                  <li className="bullets__text-insights">
-                    Opportunities for individuals who are in precarious
-                    situations are often stringent and not flexible.
-                  </li>
-                  <li className="bullets__text-insights">
-                    To respectfully address the issue surrounding low barrier
-                    employment, it is first important to establish strong
-                    relationships with the community.
-                  </li>
-                  <li className="bullets__text-insights">
-                    Inclusive hiring is a practice that needs to be learned.
-                    Once learned, a number of companies have seen a higher
-                    retention rate in employees.
-                  </li>
-
-                  <li className="bullets__text-insights">
-                    Supportive employment and making sure that community members
-                    as well as employers are given the tools to have a healthy
-                    relationship are crucial to a successful intervention.
-                  </li>
-
-                  <li className="bullets__text-insights">
-                    Empowering people to discover what they find meaningful
-                    through the power of choice allows them to help themselves.{" "}
-                  </li>
-                </ol>
               </div>
             </div>
 
-            <p className="divider">Solution & Design Highlights</p>
+            <p className="divider">Solution</p>
+
+            <div className="content__bg-max">
+              <iframe
+                src="https://www.youtube.com/embed/9jIuIIjwMYY?si=CJZz8adqpXpKpDAh"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
             <div className="content__group-main">
               <div className="content__group">
                 <p className="content__story-heading">
@@ -197,6 +212,11 @@ function Cultivate() {
                   </li>
                 </ul>
               </div>
+            </div>
+
+            <p className="divider">How it Works</p>
+            <div className="content__bg-max">
+              <img src={cultivateSignIn} className="project__img" />
             </div>
 
             <p className="divider">Validation</p>
@@ -243,9 +263,8 @@ function Cultivate() {
                 access to technology. How does one create a system for multiple
                 people without access to a device? Without access to an address?
                 Internet? How does one account for a large variety of different
-                use cases? In terms of the technical aspect, this project got me
-                to challenge my preconceived notion of how people might engage
-                with technology.
+                use cases? This project also got me to challenge my preconceived
+                notion of how people might engage with technology.
               </p>
             </div>
           </div>
