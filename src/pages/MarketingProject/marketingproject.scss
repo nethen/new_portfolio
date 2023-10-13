@@ -1,0 +1,16 @@
+@import "../../styles/partials/_FontStyles";
+@import "../../styles/partials/_Mixins";
+@import "../../styles/partials/_Variables";
+
+.container {
+  padding: 1.5rem;
+  width: 100%;
+
+  @include breakpoint-min-size($tablet) {
+    width: 70%;
+  }
+
+  @include breakpoint-min-size($desktop) {
+    width: 60%;
+  }
+}
