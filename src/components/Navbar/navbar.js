@@ -51,6 +51,13 @@ function Navbar() {
               <NavLink reloadDocument to="/" className="nav__links-item">
                 Work
               </NavLink>
+              <NavLink
+                reloadDocument
+                to="/marketing-projects"
+                className="nav__links-item"
+              >
+                Graphics
+              </NavLink>
               <NavLink reloadDocument to="/about" className="nav__links-item">
                 About
               </NavLink>
@@ -74,6 +81,13 @@ function Navbar() {
           <div className="mobile-nav__box">
             <NavLink reloadDocument className="mobile-nav__link" to="/">
               Work
+            </NavLink>
+            <NavLink
+              reloadDocument
+              className="mobile-nav__link"
+              to="/marketing-projects"
+            >
+              Graphics
             </NavLink>
             <NavLink reloadDocument className="mobile-nav__link" to="/about">
               About

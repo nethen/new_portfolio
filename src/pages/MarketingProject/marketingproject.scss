@@ -13,4 +13,43 @@
   @include breakpoint-min-size($desktop) {
     width: 60%;
   }
+
+  &__graphics {
+    @include flex-column;
+    padding-bottom: 4%;
+    padding-left: 1.5rem;
+    gap: 1rem;
+
+    @include breakpoint-min-size($tablet) {
+      @include flex-row;
+      flex-wrap: wrap;
+    }
+
+    & > div {
+      width: 100%;
+      @include breakpoint-min-size($tablet) {
+        width: 30%;
+      }
+    }
+  }
+
+  &__box {
+    @include flex-column;
+    align-items: center;
+  }
+}
+
+.graphics {
+  &__header {
+    @include m-body;
+    padding-left: 1.5rem;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
+
+span {
+  font-weight: 600;
 }
