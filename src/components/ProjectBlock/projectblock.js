@@ -13,13 +13,34 @@ function ProjectBlock(props) {
     setHovered(false);
   };
 
+  const variants = {
+    hover: {
+      opacity: 1,
+    },
+    rest: {
+      opacity: 0,
+    }
+  }
+
+  const variantsNot = {
+    hover: {
+      opacity: 0,
+    },
+    rest: {
+      opacity: 1,
+    }
+  }
+
   const style = hovered ? { color: "#4069cc" } : {};
 
   return (
     <>
-      <div
-        onMouseEnter={mouseEnter}
-        onMouseLeave={mouseLeave}
+      <motion.div
+        // onHoverStart={e => {setHovered(true)}}
+        // onHoverEnd={e => {setHovered(false)}}
+        initial={false}
+        whileHover="hover"
+        animate="rest"
         className="project"
       >
         <p style={{ color: "black" }}>{hovered.value} PARAGRAPH</p>
@@ -28,26 +49,25 @@ function ProjectBlock(props) {
           className={"project__img-container"}
           style={{ backgroundColor: props.bgcolor }}
         >
-          <AnimatePresence>
-            {hovered ? (
+          <AnimatePresence initial={false}>
               <motion.img
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
+                variants={variants}
+                // initial={{ opacity: 0 }}
+                // animate={{ opacity: 1 }}
+                // exit={{ opacity: 0 }}
                 key="hover"
                 src={props.img}
-                className={"project__logo"}
+                className={"project__logo--absolute"}
               />
-            ) : (
               <motion.img
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
+                variants={variantsNot}
+                // initial={{ opacity: 0 }}
+                // animate={{ opacity: 1 }}
+                // exit={{ opacity: 0 }}
                 key="default"
                 src={props.hoverimg}
                 className={"project__logo"}
               />
-            )}
           </AnimatePresence>
         </div>
         <div className="project__info">
@@ -56,7 +76,7 @@ function ProjectBlock(props) {
           </h2>
           <p className="project__desc">{props.desc}</p>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

@@ -6,6 +6,7 @@
   @include breakpoint-min-size($desktop) {
     margin-bottom: 3rem;
     max-width: 100%;
+    overflow:hidden;
   }
 
   &__img-container {
@@ -13,7 +14,7 @@
     width: 100%;
     border-radius: 8px;
     @include flex-row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     overflow: hidden;
 
@@ -41,6 +42,9 @@
     width: 8rem;
     @include breakpoint-min-size($desktop) {
       width: 10rem;
+    }
+    &--absolute{
+      position: absolute;
     }
   }
 
