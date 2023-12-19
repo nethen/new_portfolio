@@ -1,5 +1,6 @@
 import "./projectblock.scss";
 import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 function ProjectBlock(props) {
   const [hovered, setHovered] = useState(false);
@@ -21,11 +22,33 @@ function ProjectBlock(props) {
         onMouseLeave={mouseLeave}
         className="project"
       >
+        <p style={{ color: "black" }}>{hovered.value} PARAGRAPH</p>
+
         <div
-          className="project__img-container"
+          className={"project__img-container"}
           style={{ backgroundColor: props.bgcolor }}
         >
-          <img src={props.img} className="project__logo" />
+          <AnimatePresence>
+            {hovered ? (
+              <motion.img
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                key="hover"
+                src={props.img}
+                className={"project__logo"}
+              />
+            ) : (
+              <motion.img
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                key="default"
+                src={props.hoverimg}
+                className={"project__logo"}
+              />
+            )}
+          </AnimatePresence>
         </div>
         <div className="project__info">
           <h2 className="project__title" style={style}>

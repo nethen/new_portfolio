@@ -13,12 +13,17 @@
     width: 100%;
     border-radius: 8px;
     @include flex-row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    overflow: hidden;
 
     @include breakpoint-min-size($desktop) {
       height: 16rem;
     }
+  }
+
+  &__group-img {
+    width: 73%;
   }
 
   &__info {

@@ -8,6 +8,9 @@ import Footer from "../../components/Footer/Footer";
 import guustologo from "../../assets/guusto.svg";
 import boxpalslogo from "../../assets/boxpals.svg";
 import cultivateLogo from "../../assets/cultivate_logo.svg";
+import boxpalsGroup from "../../assets/boxpals_group.png";
+import guustoGroup from "../../assets/guusto_group.png";
+import cultivateGroup from "../../assets/cultivate_group.png";
 
 function Home() {
   return (
@@ -31,6 +34,7 @@ function Home() {
             <Link className="projects-box__link" to="/boxpals">
               <ProjectBlock
                 img={boxpalslogo}
+                hoverimg={boxpalsGroup}
                 title="Helping individuals save money through group order management"
                 desc="Product design, web development — Capstone project @ BrainStation"
                 bgcolor="#004921"
@@ -40,6 +44,7 @@ function Home() {
             <Link className="projects-box__link" to="/guusto">
               <ProjectBlock
                 img={guustologo}
+                hoverimg={guustoGroup}
                 title="Reimagining what employee recognition looks like in today's workforce"
                 desc="Product design, branding & identity, web development — Employment @ Guusto"
                 bgcolor="#22315c"
@@ -49,9 +54,10 @@ function Home() {
             <Link className="projects-box__link" to="/cultivate">
               <ProjectBlock
                 img={cultivateLogo}
+                hoverimg={cultivateGroup}
                 title="Connecting employers, employment agencies, and individuals with barriers to employment through micro-jobs"
                 desc="Service design, product design, branding & identity - Final Project @ Civic Innovation Change Lab"
-                bgcolor="#EBE8E5"
+                bgcolor="#e3d7cc"
               ></ProjectBlock>
             </Link>
           </div>
